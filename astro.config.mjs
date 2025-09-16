@@ -1,11 +1,11 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-
-import tailwindcss from '@tailwindcss/vite';
+import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel/serverless";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()]
-  }
+  site: 'https://www.simon-haenel.com',
+  output: 'server',
+  integrations: [tailwind(), vercel(), sitemap()]
 });
