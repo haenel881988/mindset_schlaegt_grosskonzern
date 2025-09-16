@@ -1,0 +1,21 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = 'Mindset schlägt Grosskonzern', description } = Astro.props as Props;
+---
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="min-h-screen bg-white text-gray-900">
+    <main class="max-w-5xl mx-auto px-4 py-10">
+      <slot />
+    </main>
+  </body>
+</html>

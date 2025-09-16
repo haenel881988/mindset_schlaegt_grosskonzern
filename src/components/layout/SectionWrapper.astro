@@ -1,0 +1,18 @@
+---
+export interface Props {
+  variant?: 'hero' | 'light' | 'proof' | 'story' | 'accent';
+}
+const { variant = 'light' } = Astro.props as Props;
+const variantClasses: Record<string,string> = {
+  hero: 'py-20',
+  light: 'py-16 bg-gray-50',
+  proof: 'py-16 bg-white',
+  story: 'py-16 bg-gray-100',
+  accent: 'py-20 bg-black text-white'
+};
+---
+<section class={`section-wrapper ${variantClasses[variant] || ''}`}>
+  <div class="max-w-4xl mx-auto px-4 space-y-6">
+    <slot />
+  </div>
+</section>
