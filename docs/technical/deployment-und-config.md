@@ -28,3 +28,16 @@ export default defineConfig({
 
 ### 3.2. robots.txt
 Die Datei `public/robots.txt` steuert die Web-Crawler. Sie gewährt vollen Zugriff und verweist explizit auf die Sitemap unter der finalen Domain.
+
+
+## Optimierungen
+
+**Verboten:**
+
+ - Sämtliche CSS / JS - Minifizierungen sind strikt verboten
+ - Sämtliche generische Performance-Optimierungen sind strikt verboten.
+ - Buld-Performance Optimierung ist STRIKT verboten
+
+Es gilt: Quality-First. Lieber ländere Build-dauer, als eine künstlich reduzierte build-dauer, die nur weitere Probleme verursachen könnte.
+
+
