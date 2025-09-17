@@ -4,7 +4,6 @@ import MainLayout from '../layouts/MainLayout.astro';
 import IndexContent from '../content/pages/index.mdx';
 
 // Frontmatter aus der MDX Datei
-// @ts-ignore - Astro MDX Module Typisierung
 const { frontmatter } = IndexContent as any;
 const { title, description, metaDescription } = frontmatter || {};
 ---

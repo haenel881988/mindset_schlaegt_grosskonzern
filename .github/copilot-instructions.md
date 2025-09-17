@@ -2,6 +2,8 @@
 
 Ziel: Diese Codebasis liefert eine inhaltlich getriebene Landingpage (Offer „Operation Zündkapsel“) mit Astro 5, MDX-Content Collection & Vercel Adapter Deployment.
 
+Leitbild: "docs\leitbild_mission.md"
+
 ### Architektur / Struktur
 - `astro.config.mjs`: Enthält Integrationen: `@astrojs/vercel`, `@astrojs/tailwind`, `@astrojs/sitemap`, `@astrojs/mdx`. Kein `output: 'server'` gesetzt (statischer Build + Vercel Adapter).
 - Content liegt unter `src/content/pages/` (MDX). Aktuelle Startseite: `index.mdx` (Frontmatter mit SEO Feldern: `title`, `description`, `metaDescription`, `focusKeyword`, `draft`, `date`).

@@ -1,8 +1,6 @@
-
 ---
 title: "Ungerecht behandelt von Firma? So schlägst du zurück."
 description: "Wenn Konzerne, Versicherer oder Behörden dich mit Paragraphen zermürben, ist das keine juristische Debatte. Es ist ein Angriff auf deine Intelligenz. Zeit, zurückzuschlagen."
-slug: "/"
 focusKeyword: "ungerecht behandelt von firma"
 metaDescription: "Fühlst du dich von einer Firma, Versicherung oder Behörde ungerecht behandelt und erniedrigt? Ich habe als Laie einen Grosskonzern besiegt. Hier ist die Methode, um die Kontrolle zurückzugewinnen."
 draft: false
@@ -11,20 +9,14 @@ date: "2025-09-16"
 import SectionWrapper from "../../components/layout/SectionWrapper.astro";
 import Card from "../../components/ui/Card.astro";
 
-<!-- 1. HERO: Aufmerksamkeit & Identifikation -->
 <SectionWrapper variant="hero">
-
-**Linke Spalte:**
-
-H1: Mindset schlägt Grosskonzern
-H2: Du fühlst dich von deiner Versicherung oder Grosskonzern gedemütigt? Muss deine Familie herhalten weil du frustriert bist?
-
-**Rechte Spalte:**
-Bild einbinden: "public\assets\images\startseite-index\simon_haenel_entschlossen.webp"
+<div class="hero-grid">
+				src="/assets/images/startseite-index/simon_haenel_entschlossen.webp" 
+			alt="Simon Haenel, entschlossener Blick, bereit für den strategischen Kampf gegen 
+</div>
 
 </SectionWrapper>
 
-<!-- 2. PROBLEM: Schmerzpunkt vertiefen -->
 <SectionWrapper variant="light">
 
 ## Der Brief, der dich nicht wütend macht – sondern dich demütigt.
@@ -39,7 +31,6 @@ Das Gefühl, das bleibt, ist die kalte Erniedrigung, wenn deine Kompetenz ignori
 
 </SectionWrapper>
 
-<!-- 3. PROOF: Sofortige Kredibilität -->
 <SectionWrapper variant="proof">
 ## Das Urteil, das für Anwälte unmöglich war: BV.2024.00062
 
@@ -49,7 +40,6 @@ Ein Informatiker, in einem Moment der Schwäche angegriffen, besiegt einen Milli
 
 </SectionWrapper>
 
-<!-- 4. STORY: Empathie aufbauen & Problem verschärfen -->
 <SectionWrapper variant="story">
 
 ## Demütigung - Der schleichende Prozess der Selbstzerstörung und Entwürdigung.
@@ -66,7 +56,6 @@ Sie haben nicht nur meine Ansprüche attackiert. Sie haben meine Realität in Fr
 
 </SectionWrapper>
 
-<!-- 5. METHOD: Die Lösung enthüllen -->
 <SectionWrapper variant="light">
 
 ## Der Wendepunkt: Wie du einen Goliath mit Nadelstichen besiegst
@@ -89,32 +78,29 @@ Sie erwarten einen teuren Anwaltskrieg. Du lieferst einen Guerillakampf der Inte
 
 </SectionWrapper>
 
-<!-- 6. OFFER: Klare Handlungsaufforderung -->
 <SectionWrapper variant="accent">
 
-## Dein Kampf. Mein Arsenal. Werde einer von 10 strategischen Rebellen.
+## Phase 1: Operation "Zündkapsel" (10 Plätze limitiert)
 
-Ich habe diese Strategie für meinen eigenen Überlebenskampf entwickelt. Jetzt gebe ich die Blaupause an 10 intelligente Kämpfer weiter, die sich nicht länger demütigen lassen.
+Ich habe diese Strategie für meinen eigenen Überlebenskampf entwickelt. Jetzt suche ich 10 "Gründer-Mandate", um den finalen Proof-of-Concept für den PR-Angriff zu validieren.
 
-Ich biete dir einen **90-Tage-Arsenal-Sprint**.
+Ich biete dir eine **strategische Allianz**, kein Coaching.
 
-In 90 Tagen intensiver 1:1-Zusammenarbeit schmieden wir deine persönliche Kommandozentrale für deinen Konflikt. Am Ende hältst du in deinen Händen:
+**Das "Gründer-Mandat" (12 Monate Vollzugriff):**
 
-1. **Deinen persönlichen "Bug-Report":** Eine forensische Analyse der Schwachstellen deines Gegners.
-2. **Dein Strategie-Playbook:** Ein konkreter Operationsplan für deine nächsten Züge.
-3. **Dein Resilienz-Protokoll:** Dein mentales Regelwerk, um unter Beschuss handlungsfähig zu bleiben.
+1.  **1:1 Onboarding & Akten-Analyse (1x Session):** Wir sezieren deinen Fall und identifizieren die "Bugs" im System deines Gegners.
+2.  **12 Monate Strategie-Sparring:** Du erhältst 1:1-Zugang zu mir (Chat/Telegram). Wir entwickeln dein Playbook und deine Resilienz.
+3.  **Wöchentliche Q&As (Video-Archiv):** Deine Fragen werden 1x systematisch beantwortet und als Video-Anleitung für alle Mandanten archiviert. Du profitierst von den Fällen der anderen.
+4.  **Dein Einsatz:** Im Gegenzug erwarte ich deine schonungslose, ehrliche Fallstudie als Video-Testimonial nach deinem Sieg.
 
-Dieser Sprint ist für Menschen, die bereit sind, ihre Erniedrigung in den Treibstoff für ihren Sieg zu verwandeln.
+Dieser Prozess ist für Menschen, die bereit sind, ihre Erniedrigung in den Treibstoff für ihren Sieg zu verwandeln.
 
-**Dein Investment in deine strategische Souveränität: CHF 1'499.-**
+**Dein Investment: CHF 999.-** (Einmalzahlung für 12 Monate)
 
 Dieses Gründungs-Angebot ist auf 10 Plätze limitiert. Dein Erfolg ist der Beweis, dass dieses System replizierbar ist.
 
-<a href="/bewerbung" class="button">Bewirb dich für den Arsenal-Sprint</a>
+<a href="/bewerbung" class="button">Bewirb dich auf einen der 10 Plätze</a>
 
 *Dies ist eine Bewerbung. Ich muss sicher sein, dass du den intellektuellen Biss und den Willen hast, diesen Weg zu gehen. Ich investiere meine Zeit nur, wenn ich an unseren gemeinsamen Sieg glaube.*
 
 </SectionWrapper>
-```
-
--
