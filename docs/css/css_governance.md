@@ -15,9 +15,10 @@ Dieses Dokument ist die verbindliche visuelle Verfassung des Projekts und defini
 **Hero-Section:**
  - 2 Spalten Layout
  - Links: H1 und H2 Überschrift
- - Rechts: Bild
+ - Rechts: Bild "public\assets\images\startseite-index\simon_haenel_entschlossen.webp"
 
-Abschnitte 
+
+Abschnitt 1
 
 
 ## 1. Philosophische Grundlage
