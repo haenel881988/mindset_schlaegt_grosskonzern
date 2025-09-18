@@ -3,10 +3,11 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import IndexContent from '../content/pages/index.mdx';
 
-// Frontmatter aus der MDX Datei
-const { frontmatter } = IndexContent as any;
-const { title, description, metaDescription } = frontmatter || {};
+// Frontmatter aus der MDX Datei (robust mit Fallbacks)
+const fm = (IndexContent as any)?.frontmatter ?? {};
+const pageTitle: string = fm.title ?? 'Mindset schlägt Grosskonzern';
+const pageDescription: string = fm.metaDescription ?? fm.description ?? 'Wenn Konzerne, Versicherer oder Behörden dich zermürben, ist das kein Zufall. Hier lernst du, strategisch zurückzuschlagen.';
 ---
-<MainLayout title={title} description={metaDescription || description}>
+<MainLayout title={pageTitle} description={pageDescription}>
   <IndexContent />
 </MainLayout>

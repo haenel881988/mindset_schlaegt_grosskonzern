@@ -7,8 +7,9 @@ import Footer from '../components/layout/Footer.astro';
 interface Props {
   title: string;
   description: string;
+  noindex?: boolean;
 }
-const { title, description } = Astro.props as Props;
+const { title, description, noindex = false } = Astro.props as Props;
 ---
 <!doctype html>
 <html lang="de" class="scroll-smooth">
@@ -17,11 +18,27 @@ const { title, description } = Astro.props as Props;
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={Astro.url.href} />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:site_name" content="Simon Haenel" />
+    <meta property="og:image" content="https://www.simon-haenel.com/assets/images/startseite_uebermich/simon_haenel_natur_froehlich.webp" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:site" content="@HanelSimon" />
+    <meta name="twitter:creator" content="@HanelSimon" />
     <title>{title}</title>
   </head>
   <body class="bg-black text-gray-200 selection:bg-brand-orange/80 selection:text-white antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 bg-brand-orange text-white px-4 py-2 rounded">Zum Inhalt springen</a>
     <Header />
-    <main>
+    <main id="main">
       <slot /> </main>
     <Footer />
   </body>
