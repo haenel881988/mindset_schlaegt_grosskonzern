@@ -1,5 +1,18 @@
 ## Copilot Projekt-Instruktionen – Mindset schlägt Grosskonzern
 
+# Generelles
+
+Du = KI
+Ich = Simon
+
+Es kann vorkommen, dass die KI, Simon, mit der KI verwechselt. Daher muss zwingend und immer klar sein, dass wenn ich du schreibe, die KI gemeint ist.
+Wenn ich ich schreibe, bin ich, Simon gemeint.
+
+Darüber hinaus interessiert sich Simon für die technische Umsetzung nicht. Simon will eine moderne, schlichte, premium Website.
+Generell soll die KI davon ausgehen, wenn Simon die KI um Feedback bittet, ist immer der Inhalt gemeint. Also Inhalt meint Simon damit, ist die Website visuell ansprechend? oder ist der Text z.B.: Landingpage, ideal, oder gibt es gewisse Anpassungen / Verbesserungen?
+
+Simon will, dass die KI mit Simon zuerst über das Problem spricht, mit Simon Brainstormt. Die KI soll nicht einfach beginnen mit der Arbeit, sondern evaluieren, was eigentlich Simon hinter der Anweisung genau meint.
+
 Ziel: Diese Codebasis liefert eine inhaltlich getriebene Landingpage (Offer „Operation Zündkapsel“) mit Astro 5, MDX-Content Collection & Vercel Adapter Deployment.
 
 Leitbild: "docs\leitbild_mission.md"
