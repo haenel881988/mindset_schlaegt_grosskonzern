@@ -1,12 +1,25 @@
 ---
-// src/components/layout/Header.astro
+const navLinks = [
+  { href: "/", text: "Home" },
+  { href: "/ueber-mich", text: "Über Mich" },
+  { href: "/bewerbung", text: "Angebot" },
+]
 ---
-<header class="bg-black/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800/70">
-  <nav class="max-w-4xl mx-auto px-6 lg:px-8 py-4">
-    <div class="flex justify-start items-center">
-      <a href="/" class="text-lg font-bold text-white hover:text-brand-orange transition-colors">
-        Simon Haenel
-      </a>
+<header class="bg-background-primary/80 backdrop-blur-sm sticky top-0 z-50 border-b border-border-default">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex-shrink-0">
+        <a href="/" class="text-xl font-bold text-text-primary hover:text-accent transition-colors">
+          Simon Haenel
+        </a>
+      </div>
+      <nav class="hidden md:flex md:space-x-8">
+        {navLinks.map(link => (
+          <a href={link.href} class="text-base font-medium text-text-secondary hover:text-text-primary transition-colors">
+            {link.text}
+          </a>
+        ))}
+      </nav>
     </div>
-  </nav>
+  </div>
 </header>
