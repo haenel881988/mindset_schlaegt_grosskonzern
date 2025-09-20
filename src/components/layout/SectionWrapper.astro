@@ -1,10 +1,11 @@
 ---
 // src/components/layout/SectionWrapper.astro
 interface Props {
-  variant?: 'hero' | 'light' | 'proof' | 'story' | 'accent';
+  variant?: 'hero' | 'content' | 'proof' | 'story' | 'minimal' | 'accent';
 }
 const { variant } = Astro.props as Props;
 
+<<<<<<< HEAD
 const bgClasses: Record<string,string> = {
   hero: 'bg-primary',
   light: 'bg-primary',
@@ -15,15 +16,26 @@ const bgClasses: Record<string,string> = {
   // Option B (starke Hervorhebung): echte Akzent-Sektion
   accent: 'bg-accent text-white',
   default: 'bg-primary',
+=======
+const rhythm: Record<string, string> = {
+  hero: 'py-16 md:py-24',
+  content: 'py-20 md:py-28',
+  proof: 'py-20 md:py-28',
+  story: 'py-20 md:py-28',
+  minimal: 'py-12 md:py-16',
+  accent: 'py-20 md:py-28',
+>>>>>>> 3d66fb8066ca3cb6adda9cca37c7770264003577
 };
 
-const bgColor = bgClasses[variant || 'default'] || bgClasses.default;
-
-// Das 2-Spalten-Layout (dein Wunsch) wird NUR auf 'hero' angewendet
 const isHero = variant === 'hero';
 ---
+<<<<<<< HEAD
 <section class:list={[bgColor, `variant-${variant || 'default'}`, "py-20 sm:py-28 overflow-hidden"]}>
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
+=======
+<section class:list={[`bg-background-primary text-text-primary overflow-hidden`, rhythm[variant || 'content'] || rhythm.content, `variant-${variant || 'content'}`]}>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
+>>>>>>> 3d66fb8066ca3cb6adda9cca37c7770264003577
     {isHero ? (
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <slot /> </div>

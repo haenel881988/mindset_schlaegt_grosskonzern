@@ -14,12 +14,20 @@ export default {
 				'border-default': '#27272a',
 				accent: '#2563eb',
 				'accent-hover': '#3b82f6',
+<<<<<<< HEAD
 				error: '#dc2626',
 				success: '#16a34a',
 
 				// Aliases für bestehende Nutzung (Rückwärtskompatibilität)
 				'background-primary': '#000000',
 				'background-secondary': '#111111',
+=======
+				'error': '#dc2626',
+				// Surfaces (helle Flächen) für White Cards
+				'surface': '#ffffff',
+				'text-on-surface': '#111111',
+				'border-surface': '#e5e7eb',
+>>>>>>> 3d66fb8066ca3cb6adda9cca37c7770264003577
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
