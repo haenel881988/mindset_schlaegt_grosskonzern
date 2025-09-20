@@ -1,45 +1,49 @@
 ---
 // src/components/layout/SectionWrapper.astro
 interface Props {
-  variant?: 'hero' | 'content' | 'proof' | 'story' | 'minimal' | 'accent';
+  variant?: 'hero' | 'content' | 'proof' | 'story' | 'minimal' | 'accent' | 'light';
 }
-const { variant } = Astro.props as Props;
+const { variant = 'content' } = Astro.props as Props;
 
-<<<<<<< HEAD
-const bgClasses: Record<string,string> = {
-  hero: 'bg-primary',
-  light: 'bg-primary',
-  proof: 'bg-primary',
-  story: 'bg-primary',
-  // Option A (dezente Hervorhebung): Border-Akzent (bestehend)
-  // accent: 'bg-primary border-t border-b border-border-default/50',
-  // Option B (starke Hervorhebung): echte Akzent-Sektion
+const bgByVariant: Record<string,string> = {
+  hero: 'bg-background-primary',
+  content: 'bg-background-primary',
+  proof: 'bg-background-primary',
+  story: 'bg-background-primary',
+  minimal: 'bg-background-primary',
+  light: 'bg-background-primary',
   accent: 'bg-accent text-white',
-  default: 'bg-primary',
-=======
+};
+
 const rhythm: Record<string, string> = {
   hero: 'py-16 md:py-24',
   content: 'py-20 md:py-28',
   proof: 'py-20 md:py-28',
   story: 'py-20 md:py-28',
   minimal: 'py-12 md:py-16',
+  light: 'py-20 md:py-28',
   accent: 'py-20 md:py-28',
->>>>>>> 3d66fb8066ca3cb6adda9cca37c7770264003577
 };
+
+const sectionClasses = [
+  bgByVariant[variant] || bgByVariant.content,
+  'overflow-hidden',
+  `variant-${variant}`,
+  rhythm[variant] || rhythm.content,
+].join(' ');
 
 const isHero = variant === 'hero';
 ---
-<<<<<<< HEAD
-<section class:list={[bgColor, `variant-${variant || 'default'}`, "py-20 sm:py-28 overflow-hidden"]}>
+<section class={sectionClasses}>
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
-=======
-<section class:list={[`bg-background-primary text-text-primary overflow-hidden`, rhythm[variant || 'content'] || rhythm.content, `variant-${variant || 'content'}`]}>
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
->>>>>>> 3d66fb8066ca3cb6adda9cca37c7770264003577
     {isHero ? (
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <slot /> </div>
+        <slot />
+      </div>
     ) : (
-      <slot /> )}
+      <div class="space-y-8 content-narrow flow-prose">
+        <slot />
+      </div>
+    )}
   </div>
 </section>
