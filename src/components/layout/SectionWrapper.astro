@@ -6,12 +6,15 @@ interface Props {
 const { variant } = Astro.props as Props;
 
 const bgClasses: Record<string,string> = {
-  hero: 'bg-black',
-  light: 'bg-black',
-  proof: 'bg-black',
-  story: 'bg-black',
-  accent: 'bg-black border-t border-b border-brand-dark/50',
-  default: 'bg-black',
+  hero: 'bg-primary',
+  light: 'bg-primary',
+  proof: 'bg-primary',
+  story: 'bg-primary',
+  // Option A (dezente Hervorhebung): Border-Akzent (bestehend)
+  // accent: 'bg-primary border-t border-b border-border-default/50',
+  // Option B (starke Hervorhebung): echte Akzent-Sektion
+  accent: 'bg-accent text-white',
+  default: 'bg-primary',
 };
 
 const bgColor = bgClasses[variant || 'default'] || bgClasses.default;
@@ -19,8 +22,8 @@ const bgColor = bgClasses[variant || 'default'] || bgClasses.default;
 // Das 2-Spalten-Layout (dein Wunsch) wird NUR auf 'hero' angewendet
 const isHero = variant === 'hero';
 ---
-<section class:list={[bgColor, `variant-${variant || 'default'}`, "py-20 sm:py-24 overflow-hidden"]}>
-  <div class="max-w-4xl mx-auto px-6 lg:px-8">
+<section class:list={[bgColor, `variant-${variant || 'default'}`, "py-20 sm:py-28 overflow-hidden"]}>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
     {isHero ? (
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <slot /> </div>

@@ -24,7 +24,19 @@
 }
 
 @layer components {
+  /* Governance: Primärer Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-lg bg-accent text-white transition-all duration-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus-visible:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed hover:bg-accent-hover;
+  }
+  /* Übergangszeit: ".button" ruft die Governance-Klasse auf */
   .button {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-lg bg-accent text-white transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus-visible:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed hover:bg-accent-hover;
+    @apply btn-primary;
+  }
+}
+
+/* Kontextuelles Override: In Accent-Sektionen sollen Absätze weiß bleiben */
+@layer components {
+  .variant-accent p {
+    @apply text-white;
   }
 }
