@@ -1,18 +1,25 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss';
+
 export default {
 	content: [
-		'./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}',
-		'./src/content/**/*.{md,mdx}',
+		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
 	],
 	theme: {
 		extend: {
-			 colors: {
-				brand: {
-					orange: '#EA580C', // Tailwind orange-600
-					dark: '#7C2D12', // Tailwind orange-900
-				}
-			}
+			colors: {
+				'background-primary': '#000000',
+				'background-secondary': '#111111',
+				'text-primary': '#EAEAEA',
+				'text-secondary': '#A0A0A0',
+				'border-default': '#27272a',
+				'accent': '#2563eb',
+				'accent-hover': '#3b82f6',
+				'error': '#dc2626',
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],
-}
+} satisfies Config;
