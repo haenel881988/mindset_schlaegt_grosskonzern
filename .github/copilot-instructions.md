@@ -13,6 +13,10 @@ Generell soll die KI davon ausgehen, wenn Simon die KI um Feedback bittet, ist i
 
 Simon will, dass die KI mit Simon zuerst über das Problem spricht, mit Simon Brainstormt. Die KI soll nicht einfach beginnen mit der Arbeit, sondern evaluieren, was eigentlich Simon hinter der Anweisung genau meint.
 
+Wenn Simon nach unklarem Feedback fragt, muss die KI immer und solange nachfragen, bis die KI weiss, was Simon meint.
+
+
+
 Ziel: Diese Codebasis liefert eine inhaltlich getriebene Landingpage (Offer „Operation Zündkapsel“) mit Astro 5, MDX-Content Collection & Vercel Adapter Deployment.
 
 Leitbild: "docs\leitbild_mission.md"
