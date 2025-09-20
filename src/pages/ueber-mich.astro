@@ -1,0 +1,21 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionWrapper from '../components/layout/SectionWrapper.astro';
+import Card from '../components/ui/Card.astro';
+const title = 'Über Mich – Simon Haenel';
+const description = 'Erfahre mehr über Simon Haenel, seine Werte und seine Mission.';
+---
+<MainLayout title={title} description={description}>
+  <SectionWrapper variant="hero">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-text-primary">Über Mich</h1>
+      <p class="text-lg text-text-secondary mb-8 max-w-xl">Ich bin Simon Haenel, leidenschaftlicher Möglichmacher und Brückenbauer zwischen Mindset und Umsetzung. Mein Ziel: Menschen und Unternehmen zu befähigen, ihr volles Potenzial zu entfalten – mit Klarheit, Mut und Freude.</p>
+      <Card title="Werte & Haltung">
+        Offenheit, Authentizität und nachhaltige Wirkung prägen mein Handeln. Ich glaube an die Kraft von Vertrauen, echter Begegnung und kontinuierlicher Entwicklung.
+      </Card>
+    </div>
+    <div class="flex justify-center">
+      <img src="/assets/images/startseite_uebermich/simon_haenel_natur_froehlich.webp" alt="Simon Haenel in der Natur" class="rounded-xl shadow-lg w-full max-w-xs object-cover" loading="lazy" />
+    </div>
+  </SectionWrapper>
+</MainLayout>
