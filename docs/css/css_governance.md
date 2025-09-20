@@ -18,7 +18,7 @@ Dieses Dokument ist die verbindliche visuelle Verfassung des Projekts und defini
  - Rechts: Bild "public\assets\images\startseite-index\simon_haenel_entschlossen.webp"
 
 
-Abschnitt 1
+
 
 
 ## 1. Philosophische Grundlage
@@ -34,11 +34,18 @@ Design Tokens sind atomare, nicht verhandelbare Konstanten. Verwaltung zentral i
 ### 2.1 Farben
 
 #### 2.1.1 Dark Mode (Standard)
-- Hintergrund: `bg-primary` = `#000000`, `bg-secondary` = `#111111`
-- Text: `text-primary` = `#FFFFFF`, `text-secondary` = `#A0A0A0`
-- Border: `border-default` = `#27272a`
-- Akzent: `accent` = `#2563eb`, `accent-hover` = `#3b82f6`
-- Feedback: `error` = `#dc2626`, `success` = `#16a34a`
+- Hintergrund (Tokens): `background-primary` = `#000000`, `background-secondary` = `#111111`
+- Text (Tokens): `text-primary` = `#EAEAEA`, `text-secondary` = `#A0A0A0`
+- Border (Token): `border-default` = `#27272a`
+- Akzent (Tokens): `accent` = `#2563eb`, `accent-hover` = `#3b82f6`
+- Feedback (Token): `error` = `#dc2626`
+
+#### 2.1.1.1 Surfaces (hell) – für weiße Cards
+- Oberfläche (Token): `surface` = `#ffffff`
+- Text auf Oberfläche (Token): `text-on-surface` = `#111111`
+- Border auf Oberfläche (Token): `border-surface` = `#e5e7eb`
+  
+Richtlinie: Die gesamte Seite verwendet einen schwarzen Hintergrund (`background-primary`). Helle Flächen kommen ausschließlich in eigenständigen Cards (White Cards) zum Einsatz.
 
 #### 2.1.2 Light Mode (Legacy/Optional)
 ⚠️ **DEPRECATED**: Wird schrittweise ausgemustert zugunsten Dark-First Design
@@ -104,9 +111,12 @@ Easing: `ease-out` (Einstieg), `ease-in-out` (Wechsel), niemals `linear` bei UI-
 
 Responsives Verhalten: Keine Größenmodifikation außer explizit (z.B. `sm:px-8`). Keine Icon-only Buttons vorsehen ohne Klartext oder `sr-only`.
 
-### 3.2 Cards
-Basis: `bg-secondary border border-gray-800 rounded-xl p-8` + optional `hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/10 transition-transform duration-200`.
-Header (optional): H3 oder Label; Body: Fließtext; Footer: CTA oder Meta.
+### 3.2 Cards (White Cards)
+Basis (Tokens-only): `bg-surface text-on-surface border border-border-surface rounded-xl p-8`  
+Hover (dezent, optional): leichter Glanz/Shift, keine starken Schatten.  
+Struktur: Optionaler Header (H3), Body-Text, optionaler Footer (CTA/Meta).
+
+Policy: White Cards sparsam einsetzen, um Inhalte zu fokussieren. Keine vollflächigen hellen Sektionen.
 
 ### 3.3 Formular-Elemente
 Input & Textarea: `w-full bg-black border-2 border-gray-800 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:border-accent focus:ring-0 transition-colors`.
@@ -117,11 +127,13 @@ Fehlerhinweis: `mt-2 text-sm text-error`.
 Modal, Toast, Navigation (Mobile Overlay) – werden erst spezifiziert wenn erforderlich; dürfen bis dahin NICHT ad-hoc gebaut werden.
 
 ## 4. Layout & Sektionen (AIDA)
-Hero (Attention), Problem (Interest), Lösung (Desire), Angebot / CTA (Action). Siehe Spacing Tokens. Grid für Lösung: `grid grid-cols-1 md:grid-cols-3 gap-8`.
+Hero (Attention), Problem (Interest), Lösung (Desire), Angebot / CTA (Action).  
+Sektionen verwenden ausnahmslos `bg-background-primary` (rein Schwarz); Varianten steuern nur Rhythmus/Spacing, nicht die Hintergrundfarbe.  
+Grid-Beispiel Lösung: `grid grid-cols-1 md:grid-cols-3 gap-8`.
 
 ## 5. Globale Elemente & Interaktion
-- Header: `bg-black/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-900`
-- Footer: `border-t border-gray-800 mt-24 py-8`
+- Header: `bg-background-primary sticky top-0 z-50 border-b border-border-default` (optional `backdrop-blur-sm`)
+- Footer: `border-t border-border-default mt-24 py-8` (Hintergrund bleibt schwarz durch Body)
 - Scroll Verhalten: Sanft (`scroll-behavior: smooth;` optional global)
 - Transitions global: `transition-colors duration-200` auf Links & Buttons
 
@@ -172,83 +184,33 @@ export default {
     './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
     './public/**/*.html'
   ],
-  darkMode: 'class', // Ermöglicht theme-switching falls später gewünscht
   theme: {
     extend: {
       colors: {
-        // Design Tokens aus Governance
-        primary: '#000000',
-        secondary: '#111111',
-        accent: {
-          DEFAULT: '#2563eb',
-          hover: '#3b82f6'
-        },
-        error: '#dc2626',
-        success: '#16a34a',
-        // Text Colors
-        'text-primary': '#FFFFFF',
+        // Hintergrund (Dark)
+        'background-primary': '#000000',
+        'background-secondary': '#111111',
+        // Text (Dark)
+        'text-primary': '#EAEAEA',
         'text-secondary': '#A0A0A0',
-        // Border
-        'border-default': '#27272a'
+        // Border (Dark)
+        'border-default': '#27272a',
+        // Akzent
+        accent: '#2563eb',
+        'accent-hover': '#3b82f6',
+        // Fehler
+        error: '#dc2626',
+        // Surfaces (Hell) für Cards
+        surface: '#ffffff',
+        'text-on-surface': '#111111',
+        'border-surface': '#e5e7eb',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif']
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      spacing: {
-        '18': '4.5rem', // 72px für spezielle Abstände
-        '22': '5.5rem'  // 88px für große Sections
-      },
-      boxShadow: {
-        'focus-ring': '0 0 0 2px rgba(37,99,235,0.75)',
-        'card-hover': '0 25px 50px -12px rgba(37,99,235,0.1)'
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.3s ease-out'
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' }
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' }
-        }
-      }
-    }
+    },
   },
-  plugins: [
-    function({ addUtilities, addComponents }) {
-      // Custom Utilities gemäß Governance
-      addUtilities({
-        '.text-shadow-headline': {
-          textShadow: '1px 1px 3px rgba(0,0,0,0.5)'
-        },
-        '.sr-only': {
-          position: 'absolute',
-          width: '1px',
-          height: '1px',
-          padding: '0',
-          margin: '-1px',
-          overflow: 'hidden',
-          clip: 'rect(0,0,0,0)',
-          whiteSpace: 'nowrap',
-          border: '0'
-        }
-      });
-      
-      // Base Components gemäß Governance
-      addComponents({
-        '.btn-primary': {
-          '@apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-lg bg-accent text-white transition-all duration-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus-visible:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed hover:bg-accent-hover': {}
-        },
-        '.card-base': {
-          '@apply bg-secondary border border-gray-800 rounded-xl p-8 hover:-translate-y-1 hover:shadow-card-hover transition-transform duration-200': {}
-        }
-      });
-    }
-  ]
+  plugins: []
 }
 ```
 
@@ -299,19 +261,22 @@ body {
 ```astro
 ---
 export interface Props {
-  variant?: 'hero' | 'content' | 'accent' | 'minimal';
+  variant?: 'hero' | 'content' | 'proof' | 'story' | 'accent' | 'minimal';
 }
 const { variant = 'content' } = Astro.props as Props;
 
-// Dark-First Design gemäß Governance
-const variantClasses: Record<string,string> = {
-  hero: 'py-20 sm:py-28 bg-primary text-primary',
-  content: 'py-16 sm:py-20 bg-secondary text-primary',
-  accent: 'py-20 sm:py-28 bg-accent text-white',
-  minimal: 'py-12 bg-primary text-primary'
+// Varianten steuern nur Rhythmus, nicht die Hintergrundfarbe (bleibt Schwarz)
+const rhythm: Record<string, string> = {
+  hero: 'py-16 md:py-24',
+  content: 'py-20 md:py-28',
+  proof: 'py-20 md:py-28',
+  story: 'py-20 md:py-28',
+  accent: 'py-20 md:py-28',
+  minimal: 'py-12 md:py-16',
 };
+const spacing = rhythm[variant] || rhythm.content;
 ---
-<section class={`section-wrapper ${variantClasses[variant]}`}>
+<section class={`bg-background-primary text-text-primary overflow-hidden ${spacing}`}>
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
     <slot />
   </div>

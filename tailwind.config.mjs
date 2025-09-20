@@ -15,6 +15,10 @@ export default {
 				'accent': '#2563eb',
 				'accent-hover': '#3b82f6',
 				'error': '#dc2626',
+				// Surfaces (helle Flächen) für White Cards
+				'surface': '#ffffff',
+				'text-on-surface': '#111111',
+				'border-surface': '#e5e7eb',
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
