@@ -1,0 +1,108 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Homepage_0__0_desktop.png",
+        "test": "../bitmaps_test/20250921-090445/mindset-schlaegt-grosskonzern-visuals_Homepage_0__0_desktop.png",
+        "selector": "",
+        "fileName": "mindset-schlaegt-grosskonzern-visuals_Homepage_0__0_desktop.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://127.0.0.1:4321/",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Unexpected module status 5. Cannot require() ES Module /workspaces/mindset_schlaegt_grosskonzern/backstop_data/engine_scripts/onReady.js because it is not yet fully loaded. This may be caused by a race condition if the module is simultaneously dynamically import()-ed via Promise.all(). Try await-ing the import() sequentially in a loop instead. (from /workspaces/mindset_schlaegt_grosskonzern/node_modules/backstopjs/core/util/runPlaywright.js)\nThis is caused by either a bug in Node.js or incorrect usage of Node.js internals.\nPlease open an issue with this stack trace at https://github.com/nodejs/node/issues\n",
+        "error": "Reference file not found /workspaces/mindset_schlaegt_grosskonzern/backstop_data/bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Homepage_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Homepage_0__1_mobile.png",
+        "test": "../bitmaps_test/20250921-090445/mindset-schlaegt-grosskonzern-visuals_Homepage_0__1_mobile.png",
+        "selector": "",
+        "fileName": "mindset-schlaegt-grosskonzern-visuals_Homepage_0__1_mobile.png",
+        "label": "Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://127.0.0.1:4321/",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Unexpected module status 5. Cannot require() ES Module /workspaces/mindset_schlaegt_grosskonzern/backstop_data/engine_scripts/onReady.js because it is not yet fully loaded. This may be caused by a race condition if the module is simultaneously dynamically import()-ed via Promise.all(). Try await-ing the import() sequentially in a loop instead. (from /workspaces/mindset_schlaegt_grosskonzern/node_modules/backstopjs/core/util/runPlaywright.js)\nThis is caused by either a bug in Node.js or incorrect usage of Node.js internals.\nPlease open an issue with this stack trace at https://github.com/nodejs/node/issues\n",
+        "error": "Reference file not found /workspaces/mindset_schlaegt_grosskonzern/backstop_data/bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Homepage_0__1_mobile.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__0_desktop.png",
+        "test": "../bitmaps_test/20250921-090445/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__0_desktop.png",
+        "selector": "",
+        "fileName": "mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__0_desktop.png",
+        "label": "Ueber mich",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://127.0.0.1:4321/ueber-mich",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "module is not defined in ES module scope\nThis file is being treated as an ES module because it has a '.js' file extension and '/workspaces/mindset_schlaegt_grosskonzern/package.json' contains \"type\": \"module\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.",
+        "error": "Reference file not found /workspaces/mindset_schlaegt_grosskonzern/backstop_data/bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__1_mobile.png",
+        "test": "../bitmaps_test/20250921-090445/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__1_mobile.png",
+        "selector": "",
+        "fileName": "mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__1_mobile.png",
+        "label": "Ueber mich",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://127.0.0.1:4321/ueber-mich",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Unexpected module status 5. Cannot require() ES Module /workspaces/mindset_schlaegt_grosskonzern/backstop_data/engine_scripts/onReady.js because it is not yet fully loaded. This may be caused by a race condition if the module is simultaneously dynamically import()-ed via Promise.all(). Try await-ing the import() sequentially in a loop instead. (from /workspaces/mindset_schlaegt_grosskonzern/node_modules/backstopjs/core/util/runPlaywright.js)\nThis is caused by either a bug in Node.js or incorrect usage of Node.js internals.\nPlease open an issue with this stack trace at https://github.com/nodejs/node/issues\n",
+        "error": "Reference file not found /workspaces/mindset_schlaegt_grosskonzern/backstop_data/bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0__1_mobile.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__0_desktop.png",
+        "test": "../bitmaps_test/20250921-090445/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__0_desktop.png",
+        "selector": "",
+        "fileName": "mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__0_desktop.png",
+        "label": "Bewerbung",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://127.0.0.1:4321/bewerbung",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Unexpected module status 5. Cannot require() ES Module /workspaces/mindset_schlaegt_grosskonzern/backstop_data/engine_scripts/onReady.js because it is not yet fully loaded. This may be caused by a race condition if the module is simultaneously dynamically import()-ed via Promise.all(). Try await-ing the import() sequentially in a loop instead. (from /workspaces/mindset_schlaegt_grosskonzern/node_modules/backstopjs/core/util/runPlaywright.js)\nThis is caused by either a bug in Node.js or incorrect usage of Node.js internals.\nPlease open an issue with this stack trace at https://github.com/nodejs/node/issues\n",
+        "error": "Reference file not found /workspaces/mindset_schlaegt_grosskonzern/backstop_data/bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__1_mobile.png",
+        "test": "../bitmaps_test/20250921-090445/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__1_mobile.png",
+        "selector": "",
+        "fileName": "mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__1_mobile.png",
+        "label": "Bewerbung",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://127.0.0.1:4321/bewerbung",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Unexpected module status 5. Cannot require() ES Module /workspaces/mindset_schlaegt_grosskonzern/backstop_data/engine_scripts/onReady.js because it is not yet fully loaded. This may be caused by a race condition if the module is simultaneously dynamically import()-ed via Promise.all(). Try await-ing the import() sequentially in a loop instead. (from /workspaces/mindset_schlaegt_grosskonzern/node_modules/backstopjs/core/util/runPlaywright.js)\nThis is caused by either a bug in Node.js or incorrect usage of Node.js internals.\nPlease open an issue with this stack trace at https://github.com/nodejs/node/issues\n",
+        "error": "Reference file not found /workspaces/mindset_schlaegt_grosskonzern/backstop_data/bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0__1_mobile.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "mindset-schlaegt-grosskonzern-visuals"
+}

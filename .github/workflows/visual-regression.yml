@@ -1,0 +1,56 @@
+name: Visual Regression
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  backstop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers (Chromium only)
+        run: npx playwright install chromium --with-deps
+
+      - name: Build site
+        run: npm run build
+
+      - name: Start static server
+        run: npx http-server dist -p 4321 &
+
+      - name: Wait for server to be ready
+        run: npx wait-on http://127.0.0.1:4321
+
+      - name: Create Backstop reference if missing
+        run: |
+          if [ ! -d "backstop_data/bitmaps_reference" ] || [ -z "$(ls -A backstop_data/bitmaps_reference 2>/dev/null)" ]; then
+            npx backstop reference || true
+          fi
+
+      - name: Run Backstop tests
+        run: npx backstop test
+        continue-on-error: true
+        id: backstop
+
+      - name: Upload Backstop HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backstop-html-report
+          path: backstop_data/html_report
+
+      - name: Fail if Backstop detected diffs
+        if: steps.backstop.outcome == 'failure'
+        run: exit 1

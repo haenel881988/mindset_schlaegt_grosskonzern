@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test:visual": "backstop test",
+    "test:visual:approve": "backstop approve"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.5",
@@ -16,5 +18,11 @@
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.13.7",
     "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "backstopjs": "^6.3.25",
+    "http-server": "^14.1.1",
+    "playwright": "^1.55.0",
+    "wait-on": "^9.0.1"
   }
 }

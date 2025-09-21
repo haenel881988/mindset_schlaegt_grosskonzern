@@ -1,0 +1,41 @@
+{
+  "id": "mindset-schlaegt-grosskonzern-visuals",
+  "viewports": [
+    { "label": "desktop", "width": 1440, "height": 900 },
+    { "label": "mobile", "width": 375, "height": 667 }
+  ],
+  "onReadyScript": "onReady.cjs",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://127.0.0.1:4321/",
+      "delay": 250
+    },
+    {
+      "label": "Ueber mich",
+      "url": "http://127.0.0.1:4321/ueber-mich",
+      "delay": 250
+    },
+    {
+      "label": "Bewerbung",
+      "url": "http://127.0.0.1:4321/bewerbung",
+      "delay": 250
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "engine": "playwright",
+  "engineOptions": {
+    "browser": "chromium"
+  },
+  "report": ["html", "CI"],
+  "misMatchThreshold": 0.1,
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 5,
+  "debug": false
+}
