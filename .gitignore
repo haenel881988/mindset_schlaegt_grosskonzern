@@ -5,6 +5,11 @@
 /dist
 /.astro
 
+# BackstopJS Test-Artefakte (nicht versionieren)
+/backstop_data/bitmaps_test/
+/backstop_data/html_report/
+/backstop_data/ci_report/
+
 # Log-Dateien und Umgebungsvariablen
 npm-debug.log*
 yarn-debug.log*
