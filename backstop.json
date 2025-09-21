@@ -9,32 +9,38 @@
     {
       "label": "Homepage",
       "url": "http://127.0.0.1:4321/",
-      "delay": 250
+      "delay": 250,
+      "selectors": ["document"]
     },
     {
       "label": "Ueber mich",
       "url": "http://127.0.0.1:4321/ueber-mich",
-      "delay": 250
+      "delay": 250,
+      "selectors": ["document"]
     },
     {
       "label": "Bewerbung",
       "url": "http://127.0.0.1:4321/bewerbung",
-      "delay": 250
+      "delay": 250,
+      "selectors": ["document"]
     },
     {
       "label": "Impressum",
       "url": "http://127.0.0.1:4321/impressum",
-      "delay": 150
+      "delay": 150,
+      "selectors": ["document"]
     },
     {
       "label": "Datenschutz",
       "url": "http://127.0.0.1:4321/datenschutz",
-      "delay": 150
+      "delay": 150,
+      "selectors": ["document"]
     },
     {
       "label": "Bewerbung Danke",
       "url": "http://127.0.0.1:4321/bewerbung/danke",
-      "delay": 150
+      "delay": 150,
+      "selectors": ["document"]
     }
   ],
   "paths": {

@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="12" failures="0" errors="0" skipped="0">
-  <testsuite name="BackstopJS" tests="12" failures="0" errors="0" skipped="0">
-    <testcase classname="document" name=" ›› Homepage"/>
-    <testcase classname="document" name=" ›› Homepage"/>
-    <testcase classname="document" name=" ›› Ueber mich"/>
-    <testcase classname="document" name=" ›› Ueber mich"/>
-    <testcase classname="document" name=" ›› Bewerbung"/>
-    <testcase classname="document" name=" ›› Bewerbung"/>
-    <testcase classname="document" name=" ›› Impressum"/>
-    <testcase classname="document" name=" ›› Impressum"/>
-    <testcase classname="document" name=" ›› Datenschutz"/>
-    <testcase classname="document" name=" ›› Datenschutz"/>
-    <testcase classname="document" name=" ›› Bewerbung Danke"/>
-    <testcase classname="document" name=" ›› Bewerbung Danke"/>
+<testsuites tests="12" failures="12" errors="12" skipped="0">
+  <testsuite name="BackstopJS" tests="12" failures="12" errors="12" skipped="0">
+    <testcase classname="document" name=" ›› Homepage">
+      <failure message="Design deviation ›› Homepage (document) component"/>
+      <error message="Design deviation ›› Homepage (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Homepage">
+      <failure message="Design deviation ›› Homepage (document) component"/>
+      <error message="Design deviation ›› Homepage (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Ueber mich">
+      <failure message="Design deviation ›› Ueber mich (document) component"/>
+      <error message="Design deviation ›› Ueber mich (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Ueber mich">
+      <failure message="Design deviation ›› Ueber mich (document) component"/>
+      <error message="Design deviation ›› Ueber mich (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Bewerbung">
+      <failure message="Design deviation ›› Bewerbung (document) component"/>
+      <error message="Design deviation ›› Bewerbung (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Bewerbung">
+      <failure message="Design deviation ›› Bewerbung (document) component"/>
+      <error message="Design deviation ›› Bewerbung (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Impressum">
+      <failure message="Design deviation ›› Impressum (document) component"/>
+      <error message="Design deviation ›› Impressum (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Impressum">
+      <failure message="Design deviation ›› Impressum (document) component"/>
+      <error message="Design deviation ›› Impressum (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Datenschutz">
+      <failure message="Design deviation ›› Datenschutz (document) component"/>
+      <error message="Design deviation ›› Datenschutz (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Datenschutz">
+      <failure message="Design deviation ›› Datenschutz (document) component"/>
+      <error message="Design deviation ›› Datenschutz (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Bewerbung Danke">
+      <failure message="Design deviation ›› Bewerbung Danke (document) component"/>
+      <error message="Design deviation ›› Bewerbung Danke (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Bewerbung Danke">
+      <failure message="Design deviation ›› Bewerbung Danke (document) component"/>
+      <error message="Design deviation ›› Bewerbung Danke (document) component"/>
+    </testcase>
   </testsuite>
 </testsuites>

@@ -3,8 +3,8 @@ report({
   "tests": [
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_0_desktop.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_0_desktop.png",
         "label": "Homepage",
@@ -14,20 +14,23 @@ report({
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 305
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 15.62055986826629,
+          "misMatchPercentage": "15.62",
+          "analysisTime": 456
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_1_mobile.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_1_mobile.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_1_mobile.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_1_mobile.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_1_mobile.png",
         "label": "Homepage",
@@ -37,20 +40,23 @@ report({
         "expect": 0,
         "viewportLabel": "mobile",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -1087
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 33.36819628721936,
+          "misMatchPercentage": "33.37",
+          "analysisTime": 264
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Homepage_0_document_1_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_0_desktop.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_0_desktop.png",
         "label": "Ueber mich",
@@ -60,20 +66,23 @@ report({
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 48
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 12.822216506630088,
+          "misMatchPercentage": "12.82",
+          "analysisTime": 96
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_1_mobile.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_1_mobile.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_1_mobile.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_1_mobile.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_1_mobile.png",
         "label": "Ueber mich",
@@ -83,20 +92,23 @@ report({
         "expect": 0,
         "viewportLabel": "mobile",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 18
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 39.139929824561406,
+          "misMatchPercentage": "39.14",
+          "analysisTime": 50
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Ueber_mich_0_document_1_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_0_desktop.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_0_desktop.png",
         "label": "Bewerbung",
@@ -106,20 +118,23 @@ report({
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 84
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 19.428548881673883,
+          "misMatchPercentage": "19.43",
+          "analysisTime": 180
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_1_mobile.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_1_mobile.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_1_mobile.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_1_mobile.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_1_mobile.png",
         "label": "Bewerbung",
@@ -129,20 +144,23 @@ report({
         "expect": 0,
         "viewportLabel": "mobile",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 92
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 36.896486229819565,
+          "misMatchPercentage": "36.90",
+          "analysisTime": 80
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Bewerbung_0_document_1_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_0_desktop.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_0_desktop.png",
         "label": "Impressum",
@@ -157,15 +175,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 1.5174382716049384,
+          "misMatchPercentage": "1.52",
+          "analysisTime": 84
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_1_mobile.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_1_mobile.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_1_mobile.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_1_mobile.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_1_mobile.png",
         "label": "Impressum",
@@ -175,20 +196,23 @@ report({
         "expect": 0,
         "viewportLabel": "mobile",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 7
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 7.062314540059347,
+          "misMatchPercentage": "7.06",
+          "analysisTime": 31
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Impressum_0_document_1_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_0_desktop.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_0_desktop.png",
         "label": "Datenschutz",
@@ -203,15 +227,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 1.5647376543209877,
+          "misMatchPercentage": "1.56",
+          "analysisTime": 68
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_1_mobile.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_1_mobile.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_1_mobile.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_1_mobile.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_1_mobile.png",
         "label": "Datenschutz",
@@ -221,20 +248,23 @@ report({
         "expect": 0,
         "viewportLabel": "mobile",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 7
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 7.325024727992087,
+          "misMatchPercentage": "7.33",
+          "analysisTime": 22
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Datenschutz_0_document_1_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_0_desktop.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_0_desktop.png",
         "label": "Bewerbung Danke",
@@ -249,15 +279,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 3.4080246913580248,
+          "misMatchPercentage": "3.41",
+          "analysisTime": 71
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_1_mobile.png",
-        "test": "../bitmaps_test/20250921-090908/mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_1_mobile.png",
+        "reference": "..\\bitmaps_reference\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_1_mobile.png",
+        "test": "..\\bitmaps_test\\20250921-113543\\mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_1_mobile.png",
         "selector": "document",
         "fileName": "mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_1_mobile.png",
         "label": "Bewerbung Danke",
@@ -267,15 +300,18 @@ report({
         "expect": 0,
         "viewportLabel": "mobile",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 11
           },
-          "misMatchPercentage": "0.00"
-        }
+          "rawMisMatchPercentage": 11.230226700251889,
+          "misMatchPercentage": "11.23",
+          "analysisTime": 30
+        },
+        "diffImage": "..\\bitmaps_test\\20250921-113543\\failed_diff_mindset-schlaegt-grosskonzern-visuals_Bewerbung_Danke_0_document_1_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     }
   ],
   "id": "mindset-schlaegt-grosskonzern-visuals"
