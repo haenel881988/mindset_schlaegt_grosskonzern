@@ -7,7 +7,7 @@ Dieses Repo enthält die Astro‑Site und ein Setup für visuelle Regressionstes
 - Basis‑URL lokal: `http://127.0.0.1:4321`
 - Engine: Playwright (Chromium)
 - Viewports: Desktop 1440×900, Mobile 375×667
-- Szenarien: `/`, `/ueber-mich`, `/bewerbung`
+- Szenarien: `/`, `/ueber-mich`, `/bewerbung`, `/impressum`, `/datenschutz`, `/bewerbung/danke`
 - Konfiguration: `backstop.json`
 
 ### Lokal ausführen

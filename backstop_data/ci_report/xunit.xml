@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="6" failures="0" errors="0" skipped="0">
-  <testsuite name="BackstopJS" tests="6" failures="0" errors="0" skipped="0">
+<testsuites tests="12" failures="0" errors="0" skipped="0">
+  <testsuite name="BackstopJS" tests="12" failures="0" errors="0" skipped="0">
     <testcase classname="document" name=" ›› Homepage"/>
     <testcase classname="document" name=" ›› Homepage"/>
     <testcase classname="document" name=" ›› Ueber mich"/>
     <testcase classname="document" name=" ›› Ueber mich"/>
     <testcase classname="document" name=" ›› Bewerbung"/>
     <testcase classname="document" name=" ›› Bewerbung"/>
+    <testcase classname="document" name=" ›› Impressum"/>
+    <testcase classname="document" name=" ›› Impressum"/>
+    <testcase classname="document" name=" ›› Datenschutz"/>
+    <testcase classname="document" name=" ›› Datenschutz"/>
+    <testcase classname="document" name=" ›› Bewerbung Danke"/>
+    <testcase classname="document" name=" ›› Bewerbung Danke"/>
   </testsuite>
 </testsuites>

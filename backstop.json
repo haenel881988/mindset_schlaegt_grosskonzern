@@ -20,6 +20,21 @@
       "label": "Bewerbung",
       "url": "http://127.0.0.1:4321/bewerbung",
       "delay": 250
+    },
+    {
+      "label": "Impressum",
+      "url": "http://127.0.0.1:4321/impressum",
+      "delay": 150
+    },
+    {
+      "label": "Datenschutz",
+      "url": "http://127.0.0.1:4321/datenschutz",
+      "delay": 150
+    },
+    {
+      "label": "Bewerbung Danke",
+      "url": "http://127.0.0.1:4321/bewerbung/danke",
+      "delay": 150
     }
   ],
   "paths": {
