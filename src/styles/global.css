@@ -39,8 +39,4 @@
   }
 }
 
-/* Kontext: Accent-Abschnitte -> Text/Links/CTA kontrastreich */
-@layer components {
-  .variant-accent p { @apply text-white; }
-  .variant-accent a { @apply text-white underline decoration-white/60 underline-offset-4 hover:decoration-white; }
-}
+/* Accent-Abschnitt nutzt Standard-Tokens; keine Sonderbehandlung nötig */
