@@ -37,6 +37,12 @@
   .flow-prose > * + * {
     @apply mt-4;
   }
+  .flow-prose h2 { @apply mt-2; }
+  .flow-prose h3 { @apply mt-2; }
+  .flow-prose ul { @apply list-disc pl-5; }
+  .flow-prose ol { @apply list-decimal pl-5; }
+  .flow-prose li + li { @apply mt-1.5; }
+  .flow-prose blockquote { @apply border-l-4 border-border-default pl-4 text-text-secondary; }
 }
 
 /* Accent-Abschnitt nutzt Standard-Tokens; keine Sonderbehandlung nötig */

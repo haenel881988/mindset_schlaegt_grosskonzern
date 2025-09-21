@@ -4,6 +4,7 @@ const navLinks = [
   { href: "/ueber-mich", text: "Über Mich" },
   { href: "/bewerbung", text: "Angebot" },
 ]
+const currentPath = Astro.url.pathname;
 ---
 <header class="bg-background-primary/80 backdrop-blur-sm sticky top-0 z-50 border-b border-border-default/70">
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
@@ -12,11 +13,19 @@ const navLinks = [
         <a href="/" class="text-xl font-bold text-text-primary hover:text-accent transition-colors">Simon Haenel</a>
       </div>
       <nav class="hidden md:flex md:space-x-8">
-        {navLinks.map(link => (
-          <a href={link.href} class="text-base font-medium text-text-secondary hover:text-text-primary transition-colors">
-            {link.text}
-          </a>
-        ))}
+        {navLinks.map(link => {
+          const isActive = currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href));
+          return (
+            <a href={link.href}
+               aria-current={isActive ? 'page' : undefined}
+               class:list={[
+                 'text-base font-medium transition-colors pb-0.5',
+                 isActive ? 'text-text-primary border-b-2 border-accent' : 'text-text-secondary hover:text-text-primary'
+               ]}>
+              {link.text}
+            </a>
+          );
+        })}
       </nav>
     </div>
   </div>

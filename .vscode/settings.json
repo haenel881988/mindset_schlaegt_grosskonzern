@@ -1,5 +1,17 @@
 {
   "files.associations": {
-    "*.mdx": "mdx"
-  }
+    "*.mdx": "mdx",
+    "*.css": "tailwindcss"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class:list=\\[([^\\]]+)\\]", "'([^']+)'"],
+    ["class=\\\"([^\\\"]+)\\\""],
+    ["class=\\{`([^`]+)`\\}"]
+  ]
 }
