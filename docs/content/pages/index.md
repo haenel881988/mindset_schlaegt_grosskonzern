@@ -41,26 +41,31 @@ Emotionen sind die Waffe deines Gegners. Ich habe gelernt, sie durch Systematik 
 ### 3. Unbeugsamer Wille
 Widerstand und Zweifel werden zu deinem Treibstoff. Du entwickelst die Disziplin und die strategische Resilienz, um jeden Sturm zu überstehen und stärker daraus hervorzugehen.
 
-## Der Beweis: Ein Urteil, das laut Anwälten unmöglich war
+## Logbucheintrag vom 02.07.2025 - Sieg
 
-Nach 18 Monaten unerbittlicher, strategischer Auseinandersetzung zuerst mit der Pensionskasse, Aktenstudium, Gerichtsverfahren, juristische Prozessierung, kam das Urteil des vom Sozialversicherungsgericht des kt. Zürichs. Volle Breitseite für die Pensionskasse. Sie mussten meine volle reglementarische Rennte wiederherstellen.
+Es war ein warmer, sonniger Sonntag Morgen. Die Klingel - der Postbote mit einem eingeschriebenem Brief in der Hand mit der bitte zu unterzeichnen. Wieder zurück die Treppen in meine Wohnung gerannt, riss ich den Brief auf, scannte ihn ein, und bat ChatGPT mir das Ergebnis zusammen zufassen.
+
+Ich hatte nämlich 0-Bock, rund 7 Seiten Din A4 zu lesen, nur um diesen Satz zu lesen:
+> "Entsprechend ist nicht erwiesen, dass die Beschwerdeführerin eine Falschangabe begangen hat, die den Entscheid des Grosskonzernes rechtfertigen würde." — Sozialversicherungsgericht des Kantons Zürich (BV.2024.00062)
+
+Nach 18 Monaten unerbittlicher, strategischer Auseinandersetzung zuerst mit der Pensionskasse, Aktenstudium und dann noch das Gerichtsverfahren inkl. juristische Prozessierung. Volle Breitseite für die Pensionskasse. 
+Sie mussten meine volle reglementarische Rennte wiederherstellen von über 33'000.- CHF, auf einen schlag. Ich bin froh habe ich keinen Anwalt genommen, sonst müsste ich sicher zwischen 3000-8000.- CHF bezahlen.
 
 Ich hatte bewiesen, dass ein einzelner Mensch, bewaffnet mit Klarheit, Logik und einem unbezwingbaren Willen, ein System schlagen kann, das darauf ausgelegt ist, ihn zu zermürben.
 
-Dieses Urteil ist nicht nur mein persönlicher Sieg. Es ist der Beweis, dass deine Situation nicht hoffnungslos ist. Es ist der Beweis, dass du die Kontrolle zurückgewinnen kannst.
+Dieses Urteil ist nicht nur mein persönlicher Sieg. Es ist der Beweis, dass deine Situation nicht hoffnungslos ist. Es ist der Beweis, dass auch du die Kontrolle zurückgewinnen kannst.
 
 
+## Willst du auch deine Selbstachtung wiedererlangen?
 
-## Operation "Zündkapsel" (5 Plätze)
+Dann biete ich dir eine 1:1 Zusammenarbeit an. Gemeinsam besprechen wir, wo dir der Schuh drückt.
+Zudem erhältst du später auch Zugang zu meiner Community, die ich aufbaue, mit Menschen wie du.
+Alle Fragen, die andere Teilnehmer haben, werden logisch, intuitiv in der Plattform auch dir zur Verfügung gestellt. Alle Fragen werden systematisch und strukturiert durch deine Fragen in einem wöchentlichen live Q&A beantwortet, welche du auch als Aufzeichnung dir anschauen kannst.
+Ich biete euch eine Plattform, wo ihr euch gegenseitig motivieren und eure Erfolgserlebenisse gemeinsam feiern könnt.
+Das Mindset, geht nicht, funktioniert nicht, wird restriktiv von der Community ausgeschlossen.
+Warum das Umfeld so entscheidend ist, hatte Dirk Kreuter in seinem Buch: "Entscheidung: Umfeld" mehr als genug dargelegt.
 
-Eine strategische Gründer‑Allianz mit mir – für deine juristische Souveränität.
-Du erhältst von mir:
-
-- 1:1 Onboarding
-- Wöchentliche Q&A‑Calls
-- Erprobte Anleitungen, Vorlagen und Checklisten
-
-Dein Einsatz: Eine ehrliche Fallstudie als Testimonial – von Ohnmacht zu strategischer Souveränität.
+Die Zugangsdauer ist für 12 Monate beschränkt. Webhosting / Arbeit, Q&A und das administrieren der Plattform ist mit Aufwand und Kosten verbunden. 
 
 **Investment: CHF 999.– (Einmalzahlung; 12 Monate Begleitung)**
 
@@ -68,35 +73,36 @@ Dein Einsatz: Eine ehrliche Fallstudie als Testimonial – von Ohnmacht zu strat
 
 ## Häufig gestellte Fragen (FAQ)
 
-1. **Ist das hier Rechtsberatung? Brauche ich einen Anwalt?**
-  Nein. Strategisches Coaching – keine Rechtsberatung.
+ - **Ist das hier Rechtsberatung?**
+   Nein. Strategisches Coaching – keine Rechtsberatung.
 
-2. **Funktioniert das auch bei meinem Fall?**
-  Es hängt von deiner Konsequenz ab. Voraussetzung sind akribische Dokumentation und Beharren auf Schriftlichkeit.
-  Telefonate und mündliche Abmachungen haben vor Gericht kaum Bestand.
-3. **Ist KI zu kompliziert?**
-  Nein. Du brauchst Logik, keine Technik.
-  Die Tools beschleunigen nur deine Klarheit.
+ - **Funktioniert das auch bei meinem Fall?**
+   Es hängt von deiner Konsequenz ab. Voraussetzung sind akribische Dokumentation und Beharren auf Schriftlichkeit.
+   Telefonate und mündliche Abmachungen haben vor Gericht kaum Bestand.
 
-4. **Wie viel Zeit brauche ich?**
-  Genug, um deine Würde zurückzuholen. Fokus schlägt Hektik.
+ - **Ist KI zu kompliziert?**
+   Nein. Du brauchst Logik, keine Technik.
+   Die Tools beschleunigen nur deine Klarheit.
 
-5. **Warum nur 5 Plätze?**
-  Enge Zusammenarbeit, hohe Wirkung. Dein Ergebnis wird zum Beweis.
+ - **Wie viel Zeit brauche ich?**
+   Genug, um deine Würde zurückzuholen. Fokus schlägt Hektik.
 
-6. **Gibt es Ratenzahlung?**
-  Nein. Ich arbeite auch nicht halbherzig mit dir.
+ - **Warum nur 5 Plätze?**
+   Enge Zusammenarbeit, hohe Wirkung. Dein Ergebnis wird zum Beweis.
 
-7. **Was meinst du mit Selbstverantwortung?**
-  Aufhören, Opfer zu sein – etwas zu unternehmen.
+ - **Gibt es Ratenzahlung?**
+   Nein. Ich arbeite auch nicht halbherzig mit dir.
 
-8. **Was passiert nach 12 Monaten?**
-  Du behältst alle Materialien. Eine Verlängerung ist optional.
+ - **Was meinst du mit Selbstverantwortung?**
+   Aufhören, Opfer zu sein – etwas zu unternehmen.
 
-9. **Ist das anstrengend oder riskant?**
-  Anstrengender ist Ohnmacht. Riskanter ist Stillstand.
+ - **Was passiert nach 12 Monaten?**
+   Du behältst alle Materialien. Eine Verlängerung ist optional.
 
-10. **Für wen ist das nichts?**
-  Für Menschen, die delegieren wollen. Für Menschen, die Ausreden lieben.
+ - **Ist das anstrengend oder riskant?**
+   Anstrengender ist Ohnmacht. Riskanter ist Stillstand.
+
+ - **Für wen ist das nichts?**
+   Für Menschen, die delegieren wollen. Für Menschen, die Ausreden lieben.
 
 [Bewirb dich auf einen der 5 Plätze](/bewerbung)
