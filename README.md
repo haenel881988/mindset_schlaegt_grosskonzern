@@ -38,13 +38,9 @@ npm run test:visual:approve
 
 Backstop‑Berichte liegen unter `backstop_data/html_report` (lokal per Browser öffnen).
 
-### GitHub Actions
+### Hinweis: Nur lokal, kein CI
 
-Der Workflow `.github/workflows/visual-regression.yml` läuft bei Push & PR auf `main`:
-- Installiert Abhängigkeiten und Playwright Chromium
-- Build der Seite und Start eines statischen Servers (`dist` auf Port 4321)
-- Erstellt Referenzen, falls keine vorhanden
-- Führt `backstop test` aus und lädt den HTML‑Report als Artefakt hoch, wenn Diffs auftreten
+Es gibt keinen GitHub‑Actions‑Workflow mehr für visuelle Regression. Tests werden ausschließlich lokal ausgeführt. Details siehe `docs/technisches/visuelle-regression-lokal.md`.
 
 ## Astro Commands
 
