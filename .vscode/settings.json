@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "*.mdx": "mdx",
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
+    "*.mjs": "javascript"
   },
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.unknownAtRules": "ignore",

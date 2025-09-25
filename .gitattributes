@@ -1,0 +1,12 @@
+# Treat web project sources as text with normalized LF line endings
+*.mjs  text eol=lf
+*.js   text eol=lf
+*.ts   text eol=lf
+*.astro text eol=lf
+*.md    text eol=lf
+*.mdx   text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
