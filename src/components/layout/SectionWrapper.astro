@@ -2,8 +2,9 @@
 // src/components/layout/SectionWrapper.astro
 interface Props {
   variant?: 'hero' | 'content' | 'proof' | 'story' | 'minimal' | 'accent';
+  prose?: boolean;
 }
-const { variant = 'content' } = Astro.props as Props;
+const { variant = 'content', prose = true } = Astro.props as Props;
 
 const bgByVariant: Record<string,string> = {
   hero: 'bg-background-primary',
@@ -11,7 +12,7 @@ const bgByVariant: Record<string,string> = {
   proof: 'bg-background-primary',
   story: 'bg-background-primary',
   minimal: 'bg-background-primary',
-  accent: 'bg-background-primary',
+  accent: 'bg-background-secondary/80 border border-border-default/60 shadow-[0_0_60px_rgba(59,130,246,0.2)] backdrop-blur-sm',
 };
 
 const rhythm: Record<string, string> = {
@@ -25,12 +26,16 @@ const rhythm: Record<string, string> = {
 
 const sectionClasses = [
   bgByVariant[variant] || bgByVariant.content,
-  'overflow-hidden',
+  'overflow-hidden relative',
   `variant-${variant}`,
   rhythm[variant] || rhythm.content,
 ].join(' ');
 
 const isHero = variant === 'hero';
+const innerClasses = ['space-y-8', 'content-narrow'];
+if (prose) {
+  innerClasses.push('flow-prose');
+}
 ---
 <section class={sectionClasses}>
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
@@ -39,7 +44,7 @@ const isHero = variant === 'hero';
         <slot />
       </div>
     ) : (
-      <div class="space-y-8 content-narrow flow-prose">
+      <div class={innerClasses.join(' ')}>
         <slot />
       </div>
     )}

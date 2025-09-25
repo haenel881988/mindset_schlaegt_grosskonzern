@@ -1,11 +1,12 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import SectionWrapper from '../components/layout/SectionWrapper.astro';
 ---
 <MainLayout title="Impressum" description="Impressum der Seite.">
-  <section class="py-24">
-     <div class="max-w-4xl mx-auto px-6 lg:px-8 text-white">
-      <h1 class="text-4xl font-bold mb-8">Impressum</h1>
-      <p class="text-gray-300">[Platzhalter für Impressum-Text. Dieser muss juristisch korrekt ausgefüllt werden.]</p>
+  <SectionWrapper variant="content">
+    <div class="space-y-6">
+      <h1>Impressum</h1>
+      <p class="text-text-secondary">[Platzhalter für Impressum-Text. Dieser muss juristisch korrekt ausgefüllt werden.]</p>
     </div>
-  </section>
+  </SectionWrapper>
 </MainLayout>

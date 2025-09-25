@@ -6,19 +6,22 @@ const title = 'Bewerbung – Operation Zündkapsel';
 const description = 'Bewirb dich für eines der 10 Gründer‑Mandate: 12‑monatiges strategisches Bündnis für deinen Sieg gegen Konzerne, Versicherer oder Behörden.';
 ---
 <MainLayout title={title} description={description}>
-  <SectionWrapper variant="accent">
-    <h1 class="text-3xl md:text-4xl font-bold mb-6">Bewerbung – Operation Zündkapsel</h1>
-    <p class="text-gray-300 mb-8">
-      Bewirb dich auf einen der 10 Plätze. Konzentriere dich auf Klarheit: Wo stehst du, was ist dein Ziel, und warum bist du der richtige Kandidat?
-    </p>
+  <SectionWrapper variant="accent" prose={false}>
+    <div class="content-narrow space-y-8">
+      <div class="space-y-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-text-primary">Bewerbung – Operation Zündkapsel</h1>
+        <p class="text-text-secondary">
+          Bewirb dich auf einen der 10 Plätze. Konzentriere dich auf Klarheit: Wo stehst du, was ist dein Ziel, und warum bist du der richtige Kandidat?
+        </p>
+      </div>
 
-    <form
-      action="https://formspree.io/f/xandgpzd"
-      method="POST"
-      class="grid gap-6 max-w-3xl"
-      id="bewerbungForm"
-      novalidate
-    >
+      <form
+        action="https://formspree.io/f/xandgpzd"
+        method="POST"
+        class="grid gap-6"
+        id="bewerbungForm"
+        novalidate
+      >
       <!-- Redirect nach Erfolg -->
       <input type="hidden" name="_next" value="/bewerbung/danke" />
       <!-- Honeypot -->
@@ -31,78 +34,79 @@ const description = 'Bewirb dich für eines der 10 Gründer‑Mandate: 12‑mona
       <input type="hidden" name="form_start_ms" id="form_start_ms" />
 
       <div class="grid gap-4 md:grid-cols-2">
-        <div>
-          <label for="vorname" class="block text-sm text-gray-300 mb-1">Vorname<span class="text-red-400">*</span></label>
-          <input id="vorname" name="vorname" required autocomplete="given-name" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors" />
+        <div class="form-field">
+          <label for="vorname" class="form-label">Vorname<span class="text-error">*</span></label>
+          <input id="vorname" name="vorname" required autocomplete="given-name" class="form-input" />
         </div>
-        <div>
-          <label for="nachname" class="block text-sm text-gray-300 mb-1">Nachname<span class="text-red-400">*</span></label>
-          <input id="nachname" name="nachname" required autocomplete="family-name" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors" />
+        <div class="form-field">
+          <label for="nachname" class="form-label">Nachname<span class="text-error">*</span></label>
+          <input id="nachname" name="nachname" required autocomplete="family-name" class="form-input" />
         </div>
       </div>
 
       <div class="grid gap-4 md:grid-cols-2">
-        <div>
-          <label for="email" class="block text-sm text-gray-300 mb-1">E‑Mail<span class="text-red-400">*</span></label>
-          <input id="email" type="email" name="email" required autocomplete="email" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors" />
+        <div class="form-field">
+          <label for="email" class="form-label">E‑Mail<span class="text-error">*</span></label>
+          <input id="email" type="email" name="email" required autocomplete="email" class="form-input" />
         </div>
-        <div>
-          <label for="telegram" class="block text-sm text-gray-300 mb-1">Telegram (optional)</label>
-          <input id="telegram" name="telegram" placeholder="@deinhandle" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors" />
+        <div class="form-field">
+          <label for="telegram" class="form-label">Telegram (optional)</label>
+          <input id="telegram" name="telegram" placeholder="@deinhandle" class="form-input" />
         </div>
       </div>
 
-      <div>
-        <label for="gegner" class="block text-sm text-gray-300 mb-1">Gegner (Firma/Versicherung/Behörde)<span class="text-red-400">*</span></label>
-  <input id="gegner" name="gegner" required class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors" />
+      <div class="form-field">
+        <label for="gegner" class="form-label">Gegner (Firma/Versicherung/Behörde)<span class="text-error">*</span></label>
+        <input id="gegner" name="gegner" required class="form-input" />
       </div>
 
-      <div>
-        <label for="fall" class="block text-sm text-gray-300 mb-1">Fall‑Kurzfassung (5–10 Sätze)<span class="text-red-400">*</span></label>
-  <textarea id="fall" name="fall" required rows="6" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors"></textarea>
+      <div class="form-field">
+        <label for="fall" class="form-label">Fall‑Kurzfassung (5–10 Sätze)<span class="text-error">*</span></label>
+        <textarea id="fall" name="fall" required rows="6" class="form-input"></textarea>
       </div>
 
-      <div>
-        <label for="ziel12" class="block text-sm text-gray-300 mb-1">Ziel in 12 Monaten<span class="text-red-400">*</span></label>
-  <textarea id="ziel12" name="ziel12" required rows="4" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors"></textarea>
+      <div class="form-field">
+        <label for="ziel12" class="form-label">Ziel in 12 Monaten<span class="text-error">*</span></label>
+        <textarea id="ziel12" name="ziel12" required rows="4" class="form-input"></textarea>
       </div>
 
-      <div>
-        <label for="bisher" class="block text-sm text-gray-300 mb-1">Was hast du bereits versucht? (optional)</label>
-  <textarea id="bisher" name="bisher" rows="3" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors"></textarea>
+      <div class="form-field">
+        <label for="bisher" class="form-label">Was hast du bereits versucht? (optional)</label>
+        <textarea id="bisher" name="bisher" rows="3" class="form-input"></textarea>
       </div>
 
-      <div>
-        <label for="doku_link" class="block text-sm text-gray-300 mb-1">Link zu Unterlagen (optional)</label>
-  <input id="doku_link" type="url" name="doku_link" placeholder="https://…" class="w-full rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors" />
+      <div class="form-field">
+        <label for="doku_link" class="form-label">Link zu Unterlagen (optional)</label>
+        <input id="doku_link" type="url" name="doku_link" placeholder="https://…" class="form-input" />
       </div>
 
       <div class="space-y-3">
         <label class="inline-flex items-start gap-3" for="commit_testimonial">
-          <input id="commit_testimonial" type="checkbox" name="commit_testimonial" required class="mt-1 focus-visible:ring-2 focus-visible:ring-accent" />
-          <span class="text-gray-300">Ich bestätige mein Commitment für ein schonungsloses Video‑Testimonial nach meinem Sieg.<span class="text-red-400">*</span></span>
+          <input id="commit_testimonial" type="checkbox" name="commit_testimonial" required class="mt-1 h-5 w-5 rounded border border-border-default bg-background-primary text-accent focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background-primary transition-colors" />
+          <span class="text-text-secondary">Ich bestätige mein Commitment für ein schonungsloses Video‑Testimonial nach meinem Sieg.<span class="text-error">*</span></span>
         </label>
         <label class="inline-flex items-start gap-3" for="privacy">
-          <input id="privacy" type="checkbox" name="privacy" required class="mt-1 focus-visible:ring-2 focus-visible:ring-accent" />
-          <span class="text-gray-300">Ich habe die <a href="/datenschutz" class="underline hover:text-white">Datenschutz</a> gelesen.<span class="text-red-400">*</span></span>
+          <input id="privacy" type="checkbox" name="privacy" required class="mt-1 h-5 w-5 rounded border border-border-default bg-background-primary text-accent focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background-primary transition-colors" />
+          <span class="text-text-secondary">Ich habe die <a href="/datenschutz" class="text-accent hover:text-accent-hover underline">Datenschutz</a> gelesen.<span class="text-error">*</span></span>
         </label>
       </div>
 
       <!-- Optionale Mini-Mathe-Aufgabe (Client-seitig) -->
-      <div id="captchaBlock" class="grid gap-2">
-        <label for="captchaAnswer" class="block text-sm text-gray-300">
-          Bitte löse zur Verifikation: <span id="captchaQuestion"></span><span class="text-red-400">*</span>
+      <div id="captchaBlock" class="form-field">
+        <label for="captchaAnswer" class="form-label">
+          Bitte löse zur Verifikation: <span id="captchaQuestion" class="text-text-primary"></span><span class="text-error">*</span>
         </label>
-  <input type="number" inputmode="numeric" name="captcha_answer" id="captchaAnswer" class="w-full max-w-xs rounded-lg bg-primary border-2 border-border-default px-4 py-3 text-text-primary focus:outline-none focus:border-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary transition-colors" required />
+        <input type="number" inputmode="numeric" name="captcha_answer" id="captchaAnswer" class="form-input max-w-xs" required />
         <input type="hidden" id="captchaExpected" />
-        <p id="captchaError" class="text-sm text-red-400 hidden">Antwort ist falsch. Bitte nochmal prüfen.</p>
+        <p id="captchaError" class="text-sm text-error hidden">Antwort ist falsch. Bitte nochmal prüfen.</p>
       </div>
 
-  <button type="submit" class="btn-primary mt-2">
+      <button type="submit" class="btn-primary mt-2">
         Bewerbung senden
       </button>
-      <p class="text-xs text-gray-400">* Pflichtfelder</p>
-    </form>
+      <p class="text-xs text-text-secondary/80">* Pflichtfelder</p>
+      </form>
+    </div>
 
     <script>
       // time trap
