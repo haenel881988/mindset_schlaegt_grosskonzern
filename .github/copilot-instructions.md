@@ -1,5 +1,10 @@
 ## Copilot Projekt-Instruktionen – Mindset schlägt Grosskonzern
 
+### Business Konzept
+
+**Single Source of truth** ist folgendes Dokument:
+***Pfad: "docs\business_konzept.md"***
+
 # Generelles
 
 Du = KI
@@ -18,6 +23,10 @@ Wenn Simon nach unklarem Feedback fragt, muss die KI immer und solange nachfrage
 
 
 Ziel: Diese Codebasis liefert eine inhaltlich getriebene Landingpage (Offer „Operation Zündkapsel“) mit Astro 5, MDX-Content Collection & Vercel Adapter Deployment.
+
+Business Konzept: "docs\business_konzept.md"
+
+Das Leitbild muss zwingend dem Business Konzept entsprechen. Das Business Konzept ist die single source of truth.
 
 Leitbild: "docs\leitbild_mission.md"
 
@@ -80,7 +89,7 @@ Dieser Workflow ist verbindlich, um schnelle Schleifen zu ermöglichen und Missv
 	- Offene Punkte (max. 5 präzise Fragen)
 	- Geplante Annahmen (wenn keine Antwort möglich; max. 5, mit Begründung)
 	- Geplanter Ablauf (3–7 Schritte)
-- Umsetzung beginnt erst nach Bestätigung – oder wenn der User explizit „autonom fortfahren“ schreibt.
+
 
 2) Planen
 - Aufgaben werden in eine To‑do‑Liste überführt, genau 1 Item ist „in‑progress“.
@@ -110,44 +119,19 @@ Dieser Workflow ist verbindlich, um schnelle Schleifen zu ermöglichen und Missv
 - [ ] Kurze Test-/Smoke‑Anleitung im Abschluss enthalten
 
 ### Kommunikationsregeln
-- Klar trennen: Editor‑Themen (Syntax‑Highlighting) vs. Runtime/Rendering.
 - Pfade und Dateinamen immer in Backticks nennen (z. B. `src/content/pages/index.mdx`).
 - Wenn Annahmen getroffen werden, müssen sie explizit gelistet und markiert werden.
 
-### MDX Autorennotiz
-- In MDX wird Markdown innerhalb „roher“ HTML‑Tags (z. B. `<div>`) nicht geparst. Lösung: 
-	- Entweder reines Markdown direkt als Kind von Komponenten (ohne umschließendes `<div>`),
-	- oder innerhalb eines HTML‑Wrappers konsequent HTML‑Tags (`<h2>`, `<p>`, `<strong>`) verwenden.
 
 ### Hinweis Tailwind Config
 - Es existiert `tailwind.config.mjs` mit korrekter `content`‑Konfiguration (MD/MDX eingeschlossen). Frühere Hinweise auf eine fehlende Config sind obsolet.
-
-### Validierungs‑Gate (HARTE STOPPREGEL)
-- Vor JEDER Umsetzung (Code erstellen/ändern, Dateien anlegen, Builds starten) erfolgt zwingend eine Validierung gemäß Schritt 1.
-- Erste Antwort enthält NUR Validierungsinhalte, KEINE Umsetzung, KEINE Datei‑Änderungen.
-- Umsetzung erst nach expliziter Freigabe durch den User mit einem der Trigger: „autonom fortfahren“, „OK, umsetzen“, „Bestätigt, leg los“.
-- Ausnahme nur bei rein erklärenden Fragen (reiner Text ohne Code/Änderungen). Bei Zweifel wird validiert.
-
-### Antwort‑Vertrag – Erste Nachricht (Format MUSS eingehalten werden)
-1) Offene Punkte (max. 5)
-2) Geplante Annahmen (falls nötig; max. 5, mit Begründung)
-3) Geplanter Ablauf (3–7 Schritte)
-4) Nächster Schritt nach Freigabe
-
-Beispiel (Kurzform):
-- Offene Punkte: 1) … 2) …
-- Annahmen: A1) …
-- Plan: P1) … P2) …
-- Warte auf „autonom fortfahren“ oder konkrete Antworten.
 
 ### Aufgaben‑Klassifikation (vor dem Plan)
 - Einordnen in: „Erklären/Beraten“ | „Code/Änderung“ | „Debuggen“ | „Recherche“.
 - Bei „Erklären/Beraten“: direkt beantworten, aber kurz bestätigen, dass keine Umsetzung erfolgt.
 - Bei „Code/Änderung“: striktes Validierungs‑Gate anwenden.
 
-### Start-/Stop‑Trigger
-- Start (Umsetzung erlauben): „autonom fortfahren“, „leg los“, „bitte jetzt umsetzen“, „OK, umsetzen“.
-- Stop (nur diskutieren): „nur erklären“, „keine Umsetzung“, „erst validieren“.
+
 
 ### Tool‑Nutzung bis zur Freigabe
 - Erlaubt: Lesen/Analysieren (Dateien anzeigen, suchen, statisch prüfen).
