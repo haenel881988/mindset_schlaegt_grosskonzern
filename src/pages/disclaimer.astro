@@ -2,11 +2,59 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SectionWrapper from '../components/layout/SectionWrapper.astro';
 ---
-<MainLayout title="Disclaimer" description="Haftungsausschluss.">
+<MainLayout title="Disclaimer" description="Haftungsausschluss für Inhalte, Coaching und Tools.">
   <SectionWrapper variant="content">
-    <div class="space-y-6">
-      <h1>Disclaimer / Haftungsausschluss</h1>
-      <p class="text-text-secondary">Dies ist keine Rechtsberatung. Alle Inhalte spiegeln ausschliesslich persönliche Erfahrungen wider. [Platzhalter für Disclaimer-Text. Dieser muss juristisch korrekt ausgefüllt werden.]</p>
+    <div class="space-y-10 content-narrow">
+      <header class="space-y-4">
+        <h1>Disclaimer / Haftungsausschluss</h1>
+        <p class="text-text-secondary">Ich teile meine persönliche Erfahrung und mein Wissen, damit du dich selbstbestimmt vorbereiten kannst. Bitte beachte die folgenden Punkte.</p>
+      </header>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Keine Rechtsberatung</h2>
+        <p class="text-text-secondary">
+          Alle Inhalte, Kurse, Vorlagen und KI-Prompts dienen der allgemeinen Information und Bildung. Ich bin kein Anwalt und biete keine individuelle Rechtsberatung an. Wenn du verbindliche Rechtsauskünfte brauchst, wende dich an eine zugelassene Anwältin oder einen Anwalt.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Eigenverantwortung & keine Erfolgsgarantie</h2>
+        <p class="text-text-secondary">
+          Du bleibst zu jeder Zeit für deine Entscheidungen und Schritte verantwortlich. Mein Gerichtserfolg ist ein individuelles Beispiel. Dein Ergebnis kann abweichen und hängt von deiner Situation, deinen Unterlagen und deinem Engagement ab. Es gibt keine Garantie auf Erfolg, finanzielle Entschädigung oder gerichtliche Entscheide.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">KI-gestützte Inhalte</h2>
+        <p class="text-text-secondary">
+          Wenn du KI-Tools einsetzt, überprüfe alle Ergebnisse kritisch. KI kann Fehler, Lücken oder veraltete Informationen liefern. Du bist verpflichtet, jede automatische Ausgabe eigenständig zu validieren, bevor du sie nutzt oder einreichst.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Gerichtsurteil & Fallbeispiele</h2>
+        <p class="text-text-secondary">
+          Ich verweise auf mein Gerichtsurteil (BV.2024.00062) als authentisches Fallbeispiel. Personenbezogene Daten und Namen Dritter werden anonymisiert. Das Original ist beim Sozialversicherungsgericht des Kantons Zürich einsehbar.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Externe Links</h2>
+        <p class="text-text-secondary">
+          Externe Links kontrolliere ich sorgfältig. Trotzdem übernehme ich keine Haftung für fremde Inhalte, auf die ich verweise. Für diese Inhalte sind stets die jeweiligen Betreiber verantwortlich.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Änderungen</h2>
+        <p class="text-text-secondary">
+          Ich behalte mir vor, diese Hinweise jederzeit zu aktualisieren. Prüfe den Stand, um auf dem Laufenden zu bleiben.
+        </p>
+      </section>
+
+      <footer class="text-sm text-text-secondary">
+        Stand: 25. September 2025
+      </footer>
     </div>
   </SectionWrapper>
 </MainLayout>

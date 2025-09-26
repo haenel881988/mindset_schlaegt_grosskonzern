@@ -2,11 +2,89 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SectionWrapper from '../components/layout/SectionWrapper.astro';
 ---
-<MainLayout title="Datenschutz" description="Datenschutzerklärung.">
+<MainLayout title="Datenschutz" description="So gehe ich mit deinen personenbezogenen Daten um.">
    <SectionWrapper variant="content">
-      <div class="space-y-6">
-         <h1>Datenschutz</h1>
-         <p class="text-text-secondary">[Platzhalter für Datenschutz-Text. Dieser muss juristisch korrekt ausgefüllt werden.]</p>
+      <div class="space-y-10 content-narrow">
+         <header class="space-y-4">
+            <h1>Datenschutz</h1>
+            <p class="text-text-secondary">Auf dieser Seite erfährst du transparent, welche Daten entstehen, wofür ich sie nutze und welche Rechte du hast.</p>
+         </header>
+
+         <section class="space-y-3">
+            <h2 class="text-2xl font-semibold text-text-primary">1. Verantwortliche Person</h2>
+            <p class="text-text-secondary">
+               Verantwortlich für diese Website und die Verarbeitung deiner Daten:
+            </p>
+            <p class="text-text-secondary">
+               Simon Haenel<br />
+               Grabackerweg 8<br />
+               4528 Zuchwil, Schweiz
+            </p>
+            <p class="text-text-secondary">
+               Kontakt: Am effektivsten erreichst du mich über das <a href="/bewerbung" class="underline">Bewerbungsformular</a>. Schriftliche Post kannst du an die oben genannte Adresse senden.
+            </p>
+         </section>
+
+         <section class="space-y-3">
+            <h2 class="text-2xl font-semibold text-text-primary">2. Hosting bei Vercel</h2>
+            <p class="text-text-secondary">
+               Diese Website wird bei Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA gehostet. Beim Aufruf der Seiten speichert Vercel automatisch technische Protokolle (z.&nbsp;B. IP-Adresse, Datum und Uhrzeit, Browsertyp, angeforderte Ressource). Die Daten dienen dazu, den sicheren Betrieb zu gewährleisten, Missbrauch zu erkennen und Performance zu analysieren. Vercel nutzt Server in der EU und kann Daten in die USA übertragen. Dabei kommen laut Anbieter Standardvertragsklauseln zur Anwendung. Mehr Informationen findest du in der <a href="https://vercel.com/legal/privacy-policy" class="underline" rel="noopener" target="_blank">Vercel Privacy Policy</a>.
+            </p>
+         </section>
+
+         <section class="space-y-3">
+            <h2 class="text-2xl font-semibold text-text-primary">3. Bewerbungsformular</h2>
+            <p class="text-text-secondary">
+               Für das Formular nutze ich den Dienst Formspree (Formspree Inc., 303 Twin Dolphin Dr, Redwood City, CA 94065, USA). Wenn du das Formular absendest, werden folgende Angaben verarbeitet:
+            </p>
+            <ul class="list-disc pl-5 text-text-secondary space-y-2">
+               <li>Pflichtangaben: Vorname, Nachname, E-Mail, Beschreibung deines Gegners, Kurzfassung deines Falles, Ziel innerhalb von 12 Monaten, Checkbox für Datenschutz und Testimonial-Commitment.</li>
+               <li>Optionale Angaben: Telegram-Handle, bisherige Schritte, Link zu Unterlagen.</li>
+               <li>Meta-Daten: Zeitpunkt der Absendung, einfache Spam-Prüfungen (Honeypot, Captcha, Zeitmessung).</li>
+            </ul>
+            <p class="text-text-secondary">
+               Formspree speichert die Daten, leitet sie an mich weiter und stellt Sicherheitsfunktionen bereit. Die Rechtsgrundlage ist deine Einwilligung, die du durch Absenden des Formulars gibst (Art. 31 Abs. 1 DSG). Du kannst sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+            <p class="text-text-secondary">
+               Hinweis: Formspree verarbeitet die Daten in den USA. Der Anbieter arbeitet mit Standardvertragsklauseln und branchentypischen Sicherheitsmaßnahmen. Mehr Infos: <a href="https://formspree.io/legal/privacy-policy" class="underline" rel="noopener" target="_blank">Formspree Privacy Policy</a>.
+            </p>
+         </section>
+
+         <section class="space-y-3">
+            <h2 class="text-2xl font-semibold text-text-primary">4. Analyse & Messung</h2>
+            <p class="text-text-secondary">
+               <strong>Vercel Analytics</strong>: Die Plattform erstellt anonymisierte Statistiken darüber, wie viele Besucher Seiten aufrufen, von welcher Region aus und mit welchem Gerät. Es werden keine Cookies gesetzt; die Daten sind aggregiert und lassen sich nicht auf einzelne Personen zurückführen. Zweck ist die Optimierung des Angebots und die technische Stabilität.
+            </p>
+            <p class="text-text-secondary">
+               <strong>Geplantes Google Analytics</strong>: Ich plane, Google Analytics erst zu aktivieren, wenn ein Consent-Dialog bereitsteht. Bis dahin werden keine Google-Analytics-Cookies gesetzt und keine Daten übertragen. Sobald das Tracking aktiv ist, erhältst du vorab eine Auswahlmöglichkeit und detaillierte Hinweise zu den verarbeiteten Daten.
+            </p>
+         </section>
+
+         <section class="space-y-3">
+            <h2 class="text-2xl font-semibold text-text-primary">5. Speicherfristen</h2>
+            <p class="text-text-secondary">
+               Bewerbungsdaten speichere ich, solange ich sie für die Prüfung deines Mandats oder die Zusammenarbeit benötige. Wenn es zu keiner Zusammenarbeit kommt, lösche ich deine Angaben spätestens nach zwölf Monaten, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Server-Logs bei Vercel werden in der Regel nach 30 Tagen automatisch gelöscht.
+            </p>
+         </section>
+
+         <section class="space-y-3">
+            <h2 class="text-2xl font-semibold text-text-primary">6. Deine Rechte</h2>
+            <p class="text-text-secondary">
+               Du hast nach Schweizer Datenschutzgesetz das Recht, Auskunft zu erhalten, Daten berichtigen oder löschen zu lassen, die Verarbeitung einzuschränken oder zu widersprechen. Außerdem kannst du die Datenportabilität verlangen. Wenn du eines dieser Rechte wahrnehmen möchtest, schreibe mir über das <a href="/bewerbung" class="underline">Bewerbungsformular</a> oder per Post.
+            </p>
+            <p class="text-text-secondary">
+               Du kannst dich zudem an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) wenden, wenn du der Meinung bist, dass deine Datenschutzrechte verletzt werden.
+            </p>
+         </section>
+
+         <section class="space-y-3">
+            <h2 class="text-2xl font-semibold text-text-primary">7. Aktualisierungen</h2>
+            <p class="text-text-secondary">
+               Ich passe diese Datenschutzerklärung an, wenn sich Prozesse oder gesetzliche Anforderungen ändern. Die aktuelle Fassung erkennst du am Stand-Datum.</p>
+         </section>
+
+         <footer class="text-sm text-text-secondary">
+            Stand: 25. September 2025
+         </footer>
       </div>
    </SectionWrapper>
 </MainLayout>

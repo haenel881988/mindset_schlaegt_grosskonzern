@@ -2,11 +2,53 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SectionWrapper from '../components/layout/SectionWrapper.astro';
 ---
-<MainLayout title="Impressum" description="Impressum der Seite.">
+<MainLayout title="Impressum" description="Verantwortliche Person, Kontaktwege und rechtliche Hinweise.">
   <SectionWrapper variant="content">
-    <div class="space-y-6">
-      <h1>Impressum</h1>
-      <p class="text-text-secondary">[Platzhalter für Impressum-Text. Dieser muss juristisch korrekt ausgefüllt werden.]</p>
+    <div class="space-y-10 content-narrow">
+      <header class="space-y-4">
+        <h1>Impressum</h1>
+        <p class="text-text-secondary">Hier findest du alle Pflichtangaben zu dieser Website und zum Angebot «Mindset schlägt Grosskonzern».</p>
+      </header>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Verantwortlich für den Inhalt</h2>
+        <p class="text-text-secondary">
+          Simon Haenel<br />
+          Grabackerweg 8<br />
+          4528 Zuchwil, Schweiz
+        </p>
+        <p class="text-text-secondary">
+          Kontakt: Nutze bitte das <a href="/bewerbung" class="underline">Bewerbungsformular</a>, damit ich deine Anfrage strukturiert entgegennehmen kann. Post erreicht mich über die oben genannte Adresse.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Angebotscharakter</h2>
+        <p class="text-text-secondary">
+          Ich bin kein Anwalt. Du erhältst Coaching, Vorlagen und Erfahrungswissen, damit du selbstbestimmt Entscheidungen triffst. Das Angebot ersetzt keine individuelle Rechtsberatung und garantiert keinen bestimmten Erfolg.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Hosting & Dienstleister</h2>
+        <p class="text-text-secondary">
+          Hosting: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA. Die Plattform stellt auch Vercel Analytics bereit. Es werden technische Nutzungsdaten (z.&nbsp;B. aufgerufene Seiten, ungefähre Geolocation, Gerätetyp) in aggregierter Form verarbeitet, um die Performance der Website zu prüfen. Mehr Informationen: <a href="https://vercel.com/legal/privacy-policy" class="underline" rel="noopener" target="_blank">Vercel Privacy Policy</a>.
+        </p>
+        <p class="text-text-secondary">
+          Formulare: Für Bewerbungen verwende ich den Dienst Formspree (Formspree Inc., 303 Twin Dolphin Dr, Redwood City, CA 94065, USA). Formspree verarbeitet die Angaben aus dem Formular (z.&nbsp;B. Name, E-Mail, Falldetails), um sie an mich weiterzuleiten. Details: <a href="https://formspree.io/legal/privacy-policy" class="underline" rel="noopener" target="_blank">Formspree Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-2xl font-semibold text-text-primary">Urheberrecht</h2>
+        <p class="text-text-secondary">
+          Inhalte, Texte, Grafiken und Medien auf dieser Website unterliegen dem Schweizer Urheberrecht. Wenn du Inhalte verwenden möchtest, frage bitte vorher schriftlich an. Eine Weitergabe ohne Einwilligung ist nicht gestattet.
+        </p>
+      </section>
+
+      <footer class="text-sm text-text-secondary">
+        Stand: 25. September 2025
+      </footer>
     </div>
   </SectionWrapper>
 </MainLayout>
