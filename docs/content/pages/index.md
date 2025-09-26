@@ -9,7 +9,7 @@ date: "2025-09-16"
 
 # Mindset schlägt Grosskonzern
 
-## Wie du in 12 Wochen Angst und juristische Hilflosigkeit in Resilienz und Souveränität verwandelst.
+## Juristische Selbsthilfe mit KI ist nicht jedermanns Sache. Wie siehts bei dir aus?
 
 ![Simon Haenel, entschlossener Blick, bereit für den strategischen Kampf](/assets/images/startseite-index/simon_haenel_entschlossen.webp)
 

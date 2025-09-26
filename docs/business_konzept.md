@@ -25,7 +25,7 @@
 ## 🎯 NEUE POSITIONIERUNG
 
 ### **NEUE BRAND-IDENTITY:**
-**"Simon Haenel - Der Mann, der mit KI gegen Großkonzerne gewann"**
+**"Mindset schlägt Grosskonzern"**
 
 ### **NEUE VALUE PROPOSITION (ÜBERARBEITET):**
 *"Du wirst ungerecht behandelt? Mindset schlägt Grosskonzern vor Gericht (BV.2024.00062) mithilfe der KI."*
@@ -46,7 +46,7 @@ Menschen mit juristischen Problemen, die
 - **Tertiär:** Selbstständige mit Compliance-Problemen (40+ Jahre)
 
 ### **NEUE KERNBOTSCHAFT:**
-*"Nicht die KI macht den Unterschied - sondern das Vertrauen, sie richtig zu nutzen."*
+*"Nicht die KI macht den Unterschied - sondern das praktische Wissen welches aus dem Ergebnis der praktischen Anwendung von KI entspringt."*
 
 ---
 
@@ -56,9 +56,9 @@ Menschen mit juristischen Problemen, die
 
 #### **NEUE HERO-SECTION (ÜBERARBEITET):**
 ```
-HEADLINE: "Wie ich mit KI einen Rechtsstreit gegen einen Grosskonzern gewonnen habe"
+HEADLINE: "Mindset schlägt Grosskonzern"
 
-SUBHEADLINE: "Du willst dich juristisch selbstermächtigen? Mindset schlägt Grosskonzern!"
+SUBHEADLINE: "Du willst juristische Selbsthilfe? Mindset schlägt Grosskonzern!"
 
 CTA: "Fallbeispiel + Prompts herunterladen (kostenlos)"
 ```
@@ -171,7 +171,7 @@ STARTSEITE:
 "Simon Haenel gewann mit KI Rechtsstreit gegen Grosskonzern. Komplett ohne Anwalt vor Gericht mit Erfolg! ✓ Gerichtlich bestätigt ✓ Schritt-für-Schritt ✓ Ohne Anwalt"
 
 BLOG-ARTIKEL:
-"[Titel] - Bewährte KI-Strategien für juristische Selbsthilfe. Von Simon Haenel, der erfolgreich gegen eine Pensionskasse vor Gericht zog. ✓ Praxiserprobt ✓ Kostenlos"
+"[Titel] - Mindset schlägt Grosskonzern. Von Simon Haenel, der erfolgreich gegen eine Pensionskasse gewann. ✓ Direkt aus der Praxis ✓"
 ```
 
 ### **🤖 ROBOTS.TXT & SITEMAP**
