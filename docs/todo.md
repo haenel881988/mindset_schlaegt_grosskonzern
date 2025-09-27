@@ -1,4 +1,19 @@
+# todos - Ideen / Brainstorming von Simon
+
+Hier werden alle Todos, Unsortierte Ideen von Simon aufgelistet.
+
+- Landingpage finalisieren
+- Newsletter umsetzen
+- Blogserie starten --> mit welchem Blog / Thema beginnen?
+- Evtl. gratis Handout / Fallbeispiel als Download --> im Gegenzug E-Mail-Adressen?
+- Notionvorlage fertigstellen oder erstmal 1:1 Angebot für 999.-? 5 Plätze
+- CSS / Styling, noch immer nicht optimal! Obwohl sicher schon 8 Verbesserungsdurchläufe mit KI!
+
+
+Pitch immer auf die nächst höhere Stufe?
+
 # Projekt-ToDo – Mindset schlägt Grosskonzern
+
 
 > Single Source of Truth bleibt `docs/business_konzept.md`. Diese Liste priorisiert die Umsetzungsschritte.
 
