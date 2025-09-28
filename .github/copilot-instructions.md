@@ -134,12 +134,6 @@ Wenn die KI absolut 100% sicher ist, soll die KI mit Punkt 2) weitermachen.
 Einfache Sprache verwenden und konkrete Handlungsvorschläge geben.
 
 
-
-
-### Prompt‑Vorlage nutzen
-- Für Aufgaben, die zuerst validiert werden sollen, verwende die Vorlage: `docs/prompting/templates/prompt-validation.md`.
-- Inhalt kurz kopieren, „Aufgabe / Erwartungen / Kontext“ ausfüllen; Copilot antwortet gemäß Schritt 1.
-
 ### Definition of Done (DoD)
 - [ ] Akzeptanzkriterien erfüllt (explizit im Prompt genannt)
 - [ ] Build sauber (`npm run build`), keine neuen Warnungen/Fehler

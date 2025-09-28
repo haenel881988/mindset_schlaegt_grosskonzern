@@ -1,0 +1,60 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionWrapper from '../components/layout/SectionWrapper.astro';
+import Card from '../components/ui/Card.astro';
+
+const title = 'Fallstudie: Wie ich einen Grosskonzern besiegte';
+const description = 'Eine detaillierte Aufschlüsselung der Strategie, Taktiken und KI-Prompts, die zum Sieg im Fall BV.2024.00062 führten.';
+---
+<MainLayout title={title} description={description} noindex={true}>
+  <SectionWrapper variant="hero">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Fallstudie: Mein Sieg gegen den Grosskonzern</h1>
+      <p class="mt-4 text-lg text-muted max-w-3xl mx-auto">Dies ist keine Theorie. Das ist die dokumentierte Blaupause meines 8-monatigen Kampfes – vom schockierenden Brief bis zum finalen Gerichtsurteil.</p>
+    </div>
+  </SectionWrapper>
+
+  <SectionWrapper variant="content">
+    <div class="prose prose-lg max-w-none">
+      <h2>Der Anfang: Schock und Ohnmacht</h2>
+      <p>"Aufgrund Ihrer Anzeigepflichtsverletzung..." – mit diesem Satz wurde mir im September 2023 die Rente von CHF 1'300 pro Monat gestrichen. Ich war fassungslos. Mein erster Gedanke: Das kann nicht rechtens sein. Mein zweiter: Wie soll ich das beweisen?</p>
+      
+      <h3>1. Die Macht der Timeline: Fakten gegen Behauptungen</h3>
+      <p>Der grösste Fehler, den du machen kannst, ist, dich auf Diskussionen einzulassen. Konzerne nutzen Verwirrung als Waffe. Meine erste Aktion war daher, eine lückenlose, belegbare Timeline zu erstellen. Jede E-Mail, jedes Dokument, jeder Anruf (mit Notiz) wurde zu einem Datenpunkt in einer Kette, die am Ende nicht zu zerreissen war.</p>
+      
+      <Card title="Praxis-Tipp: Dein erstes To-Do">
+        <p>Öffne ein leeres Dokument. Liste JEDE einzelne Interaktion mit deinem Gegner chronologisch auf. Nur Datum, Ereignis und Beleg (z.B. "E-Mail von X.pdf"). Das ist die Grundlage für alles Weitere.</p>
+      </Card>
+
+      <h3 class="mt-12">2. Die KI als Waffe: Präzise Fragen statt blindem Vertrauen</h3>
+      <p>Ich habe die KI nicht gefragt: "Was soll ich tun?". Ich habe sie als unermüdlichen Analyse-Assistenten benutzt. Ein entscheidender Prompt war:</p>
+      <blockquote class="border-l-4 border-accent pl-4 italic">
+        "Analysiere das folgende Schreiben [TEXT EINFÜGEN] auf Widersprüche, unbewiesene Behauptungen und implizite Drohungen. Erstelle eine Tabelle mit drei Spalten: Behauptung des Absenders, meine Faktenlage, benötigter Beleg von meiner Seite."
+      </blockquote>
+      <p>Dieser Ansatz verwandelt emotionale Schreiben in eine sachliche To-Do-Liste und nimmt dem Gegner seine psychologische Macht.</p>
+
+      <h3 class="mt-12">3. Der kritische Fehler, der mich fast den Sieg kostete</h3>
+      <p>In den ersten Wochen habe ich versucht, telefonisch zu "deeskalieren". Ein fataler Fehler. Mündliche Aussagen sind wertlos. Jedes Telefonat, das nicht mit einer schriftlichen Bestätigung per E-Mail zusammengefasst wird, hat nie stattgefunden. Der Konzern wird alles leugnen. Ab dem Moment, als ich auf 100% Schriftlichkeit umstellte, änderte sich die Dynamik.</p>
+    </div>
+  </SectionWrapper>
+
+  <SectionWrapper variant="accent">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold">Willst du diesen Weg nicht alleine gehen?</h2>
+      <p class="mt-4 text-lg max-w-2xl mx-auto">Diese Fallstudie zeigt dir die Methode. Aber die Umsetzung im eigenen Fall, unter Druck und mit ständig neuen Schreiben des Gegners, ist die eigentliche Herausforderung.</p>
+      <p class="mt-2 text-lg max-w-2xl mx-auto">Genau dafür habe ich die **"Operation Zündkapsel"** geschaffen.</p>
+      
+      <div class="mt-8 text-left max-w-2xl mx-auto bg-surface p-8 rounded-lg shadow-xl">
+        <h3 class="text-2xl font-bold text-text-on-surface">Operation Zündkapsel: Dein 12-Wochen-Mentoring</h3>
+        <ul class="mt-4 space-y-3 list-disc list-inside text-text-on-surface-secondary">
+          <li><strong>1-zu-1 Onboarding:</strong> Wir bauen gemeinsam dein digitales Dossier auf und konfigurieren dein persönliches KI-System.</li>
+          <li><strong>Wöchentliche Sprints:</strong> Du erhältst jede Woche klare Aufgaben, um deinen Fall systematisch voranzutreiben.</li>
+          <li><strong>Live-Analysen:</strong> Wir analysieren neue Schreiben deines Gegners gemeinsam und definieren die nächsten Schritte.</li>
+          <li><strong>Voller Zugriff:</strong> Du bekommst mein komplettes Prompt-Arsenal und alle Checklisten.</li>
+        </ul>
+        <p class="mt-6 font-bold">Dieses Programm ist für die, die bereit sind, die volle Verantwortung zu übernehmen und systematisch zurückzuschlagen.</p>
+        <a href="/bewerbung" class="btn-primary mt-6 w-full text-center">Jetzt für ein Strategiegespräch bewerben</a>
+      </div>
+    </div>
+  </SectionWrapper>
+</MainLayout>
