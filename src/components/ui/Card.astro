@@ -1,10 +1,36 @@
 ---
-export interface Props { title?: string }
-const { title } = Astro.props as Props;
+export interface Props { 
+  title?: string;
+  interactive?: boolean;
+  id?: string;
+  'aria-label'?: string;
+  'aria-describedby'?: string;
+}
+const { title, interactive = false, id, 'aria-label': ariaLabel, 'aria-describedby': ariaDescribedby } = Astro.props as Props;
+
+// Bessere Klassen-Zusammenstellung basierend auf Props
+const cardClasses = [
+  interactive ? 'card-interactive' : 'card-base',
+  // Weitere Utility-Klassen können hier hinzugefügt werden
+].join(' ');
+
+// Accessibility-Attribute aufbauen
+const accessibilityProps: Record<string, any> = {};
+if (id) accessibilityProps.id = id;
+if (ariaLabel) accessibilityProps['aria-label'] = ariaLabel;
+if (ariaDescribedby) accessibilityProps['aria-describedby'] = ariaDescribedby;
+if (interactive) {
+  accessibilityProps.role = 'button';
+  accessibilityProps.tabindex = '0';
+}
 ---
-<div class="card-base">
-  {title && <h3 class="text-xl md:text-2xl font-bold text-text-on-surface mb-3">{title}</h3>}
-  <div class="text-text-on-surface-secondary leading-relaxed">
+<div class={cardClasses} {...accessibilityProps}>
+  {title && (
+    <div class="card-header">
+      <h3 class="text-xl md:text-2xl font-bold text-text-on-surface">{title}</h3>
+    </div>
+  )}
+  <div class="text-text-on-surface-secondary leading-relaxed space-y-4">
     <slot />
   </div>
 </div>

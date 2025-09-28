@@ -3,8 +3,9 @@
 interface Props {
   variant?: 'hero' | 'content' | 'proof' | 'story' | 'minimal' | 'accent';
   prose?: boolean;
+  spacing?: 'compact' | 'normal' | 'spacious';
 }
-const { variant = 'content', prose = true } = Astro.props as Props;
+const { variant = 'content', prose = true, spacing = 'normal' } = Astro.props as Props;
 
 const bgByVariant: Record<string,string> = {
   hero: 'bg-background-primary',
@@ -12,33 +13,64 @@ const bgByVariant: Record<string,string> = {
   proof: 'bg-gradient-to-b from-background-primary via-background-primary to-background-secondary/90',
   story: 'bg-background-secondary',
   minimal: 'bg-background-primary',
-  accent: 'bg-background-secondary/80 border border-border-default/60 shadow-[0_0_60px_rgba(59,130,246,0.2)] backdrop-blur-sm',
+  accent: 'bg-background-secondary/80 border border-border-default/60 shadow-[0_0_60px_rgba(37,99,235,0.2)] backdrop-blur-sm',
 };
 
-const rhythm: Record<string, string> = {
-  hero: 'py-16 md:py-24',
-  content: 'py-20 md:py-28',
-  proof: 'py-20 md:py-28',
-  story: 'py-20 md:py-28',
-  minimal: 'py-12 md:py-16',
-  accent: 'py-20 md:py-28',
+// Verbesserter Rhythm mit Design-Token-basierten Abständen
+const rhythm: Record<string, Record<string, string>> = {
+  hero: {
+    compact: 'py-rhythm-lg md:py-rhythm-xl',
+    normal: 'py-16 md:py-24',
+    spacious: 'py-20 md:py-32',
+  },
+  content: {
+    compact: 'py-rhythm-md md:py-rhythm-lg',
+    normal: 'py-rhythm-lg md:py-rhythm-xl',
+    spacious: 'py-20 md:py-28',
+  },
+  proof: {
+    compact: 'py-rhythm-lg md:py-rhythm-xl',
+    normal: 'py-20 md:py-28',
+    spacious: 'py-24 md:py-32',
+  },
+  story: {
+    compact: 'py-rhythm-md md:py-rhythm-lg',
+    normal: 'py-rhythm-lg md:py-rhythm-xl',
+    spacious: 'py-20 md:py-28',
+  },
+  minimal: {
+    compact: 'py-rhythm-sm md:py-rhythm-md',
+    normal: 'py-rhythm-md md:py-rhythm-lg',
+    spacious: 'py-16 md:py-20',
+  },
+  accent: {
+    compact: 'py-rhythm-lg md:py-rhythm-xl',
+    normal: 'py-20 md:py-28',
+    spacious: 'py-24 md:py-32',
+  },
 };
 
 const sectionClasses = [
   bgByVariant[variant] || bgByVariant.content,
   'overflow-hidden relative',
   `variant-${variant}`,
-  rhythm[variant] || rhythm.content,
+  rhythm[variant]?.[spacing] || rhythm.content.normal,
 ].join(' ');
 
 const isHero = variant === 'hero';
-const innerClasses = ['space-y-8', 'content-narrow'];
-if (prose) {
-  innerClasses.push('flow-prose');
+const innerClasses = ['space-y-8'];
+
+// Bessere Content-Width-Kontrolle für verschiedene Varianten
+if (variant === 'hero') {
+  innerClasses.push('content-wide');
+} else if (prose) {
+  innerClasses.push('content-prose', 'prose-improved');
+} else {
+  innerClasses.push('content-narrow');
 }
 ---
 <section class={sectionClasses}>
-  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="container-responsive max-w-5xl">
     {isHero ? (
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <slot />
