@@ -103,10 +103,13 @@ Ende – Bei Unklarheiten zuerst diese Datei erweitern statt implizite Konventio
 Dieser Workflow ist verbindlich, um schnelle Schleifen zu ermöglichen und Missverständnisse früh zu eliminieren.
 
 1) Validieren (Pflicht vor Umsetzung)
-- Copilot prüft eingehende Aufgaben zunächst auf Unklarheiten und antwortet ausschließlich mit:
+- Copilot prüft eingehende Aufgaben zunächst auf Unklarheiten. Weun Unklarheiten vorhanden, dann fahre mit 1) a) fort.
+Wenn die KI absolut 100% sicher ist, soll die KI mit Punkt 2) weitermachen.
+
+1) a) Antwortet ausschließlich mit:
 	- Offene Punkte (max. 5 präzise Fragen)
 	- Geplante Annahmen (wenn keine Antwort möglich; max. 5, mit Begründung)
-	- Geplanter Ablauf (3–7 Schritte)
+	- Geplanter Ablauf (3–7 Schritte)3
 
 
 2) Planen
