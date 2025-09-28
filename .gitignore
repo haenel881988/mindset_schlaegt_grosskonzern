@@ -4,6 +4,7 @@
 # Build-Artefakte
 /dist
 /.astro
+/.vercel
 
 # BackstopJS Test-Artefakte (nicht versionieren)
 /backstop_data/bitmaps_test/
