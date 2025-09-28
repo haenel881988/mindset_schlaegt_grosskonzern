@@ -16,6 +16,16 @@ Proof of Concept dafür vorhanden.
 
 # Generelles
 
+Negative Konotionen sind strikt verboten! Lieber keine Sätze als ein negativ besetzte konotion.
+
+***Negatives Beispiel:***
+Du bekommst kein Mut-Mach-Coaching...
+
+Stattdessen gar kein Satz einfügen, vor der eigentlichen Botschaft. Oder zumindest positiv formulieren:
+Du bekommst nicht nur  ein Mut-Mach-Coaching - sondern auch eine strukturierte und logische Vorgehensweise.
+
+
+
 Du = KI
 Ich = Simon
 
