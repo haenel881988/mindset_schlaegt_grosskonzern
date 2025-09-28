@@ -9,8 +9,8 @@ const { variant = 'content', prose = true } = Astro.props as Props;
 const bgByVariant: Record<string,string> = {
   hero: 'bg-background-primary',
   content: 'bg-background-primary',
-  proof: 'bg-background-primary',
-  story: 'bg-background-primary',
+  proof: 'bg-gradient-to-b from-background-primary via-background-primary to-background-secondary/90',
+  story: 'bg-background-secondary',
   minimal: 'bg-background-primary',
   accent: 'bg-background-secondary/80 border border-border-default/60 shadow-[0_0_60px_rgba(59,130,246,0.2)] backdrop-blur-sm',
 };
