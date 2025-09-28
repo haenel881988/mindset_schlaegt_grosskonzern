@@ -2,38 +2,112 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* CSS Custom Properties für Theme Support und bessere Wartbarkeit */
+:root {
+  /* Farben aus Design Tokens */
+  --color-primary: #000000;
+  --color-secondary: #111111;
+  --color-accent: #2563eb;
+  --color-accent-hover: #3b82f6;
+  --color-text-primary: #EAEAEA;
+  --color-text-secondary: #A0A0A0;
+  --color-border-default: #27272a;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+  --color-surface: #ffffff;
+  --color-text-on-surface: #111111;
+  --color-border-surface: #e5e7eb;
+  
+  /* Motion Tokens */
+  --transition-fast: 150ms ease-out;
+  --transition-medium: 200ms ease-out;
+  --transition-slow: 300ms ease-out;
+  
+  /* Spacing Rhythm */
+  --rhythm-xs: 0.5rem;
+  --rhythm-sm: 1rem;
+  --rhythm-md: 1.5rem;
+  --rhythm-lg: 2rem;
+  --rhythm-xl: 3rem;
+}
+
+/* Global Styles mit verbesserter Typografie */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @layer base {
   body {
     @apply bg-background-primary text-text-primary antialiased;
+    margin: 0;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    line-height: 1.6;
   }
+  
   h1 {
     @apply text-4xl font-extrabold leading-tight tracking-tight md:text-7xl;
+    /* Verbesserte Lesbarkeit mit max-width */
+    max-width: 20ch;
   }
+  
   h2 {
     @apply text-2xl font-semibold leading-snug tracking-tight md:text-3xl text-text-primary;
+    max-width: 30ch;
   }
+  
   h3 {
     @apply text-xl font-semibold md:text-2xl;
+    max-width: 35ch;
   }
+  
   p {
     @apply text-lg leading-relaxed text-text-secondary;
+    /* Optimale Zeilenlänge für Lesbarkeit */
+    max-width: 65ch;
   }
+  
   a {
     @apply text-accent hover:text-accent-hover transition-colors;
   }
 }
 
+/* Focus Styles - Global mit CSS Custom Properties */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  transition: outline-color var(--transition-fast);
+}
+
 @layer components {
-  /* Fließtext Rhythmus */
+  /* Fließtext Rhythmus mit verbessertem Spacing */
   .flow-prose > * + * {
     @apply mt-4;
   }
-  .flow-prose h2 { @apply mt-2; }
-  .flow-prose h3 { @apply mt-2; }
-  .flow-prose ul { @apply list-disc pl-5; }
-  .flow-prose ol { @apply list-decimal pl-5; }
+  .flow-prose h2 { @apply mt-8 mb-4; }
+  .flow-prose h3 { @apply mt-6 mb-3; }
+  .flow-prose ul { @apply list-disc pl-5 space-y-1; }
+  .flow-prose ol { @apply list-decimal pl-5 space-y-1; }
   .flow-prose li + li { @apply mt-1.5; }
-  .flow-prose blockquote { @apply border-l-4 border-border-default pl-4 text-text-secondary; }
+  .flow-prose blockquote { 
+    @apply border-l-4 border-border-default pl-4 text-text-secondary italic my-6; 
+  }
+  
+  /* Verbesserte Prose-Darstellung für bessere Lesbarkeit */
+  .prose-improved {
+    @apply flow-prose;
+    /* Maximale Breite für optimale Lesbarkeit */
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Accent-Abschnitt nutzt Standard-Tokens; keine Sonderbehandlung nötig */
