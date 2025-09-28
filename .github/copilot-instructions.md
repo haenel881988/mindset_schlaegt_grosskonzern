@@ -113,6 +113,8 @@ Dieser Workflow ist verbindlich, um schnelle Schleifen zu ermöglichen und Missv
 - Aufgaben werden in eine To‑do‑Liste überführt, genau 1 Item ist „in‑progress“.
 - Abhängigkeiten/Dateipfade/Contracts werden kurz notiert (Inputs/Outputs, Fehlerbilder).
 
+2) a: git befehle ausführen - git add .; git commit -m "Die konkreten Todos, Probleme issues, etc. hier als zu ändernde Elemente einfügen"; git push
+
 3) Umsetzen (kleine, sichere Schritte)
 - Änderungen minimal-invasiv, nur betroffene Dateien; keine ungebetenen Refactors.
 - Nach jedem bedeutenden Schritt: kurze Statusmeldung und nächster Schritt.
@@ -124,6 +126,12 @@ Dieser Workflow ist verbindlich, um schnelle Schleifen zu ermöglichen und Missv
 
 5) Zusammenfassen
 - Was wurde geändert (Dateien, Schlüsselstellen), wie testen, offener Rest/Nächstes.
+
+5) a) Wieder Git befehle durchführen und Dokumentieren, was alles  geändert wurde und offene Todos / Issues / Erkenntnisse ebenfalls in die commit nachricht schreiben damit diese Infos, für Simon, als Zusammenfassung / nächste Schritte dargelegt werden können.
+Einfache Sprache verwenden und konkrete Handlungsvorschläge geben.
+
+
+
 
 ### Prompt‑Vorlage nutzen
 - Für Aufgaben, die zuerst validiert werden sollen, verwende die Vorlage: `docs/prompting/templates/prompt-validation.md`.
