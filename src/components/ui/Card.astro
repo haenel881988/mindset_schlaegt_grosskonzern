@@ -1,12 +1,13 @@
 ---
 export interface Props { 
   title?: string;
+  badge?: string;
   interactive?: boolean;
   id?: string;
   'aria-label'?: string;
   'aria-describedby'?: string;
 }
-const { title, interactive = false, id, 'aria-label': ariaLabel, 'aria-describedby': ariaDescribedby } = Astro.props as Props;
+const { title, badge, interactive = false, id, 'aria-label': ariaLabel, 'aria-describedby': ariaDescribedby } = Astro.props as Props;
 
 // Bessere Klassen-Zusammenstellung basierend auf Props
 const cardClasses = [
@@ -25,12 +26,13 @@ if (interactive) {
 }
 ---
 <div class={cardClasses} {...accessibilityProps}>
-  {title && (
+  {(title || badge) && (
     <div class="card-header">
-      <h3 class="text-xl md:text-2xl font-bold text-text-on-surface">{title}</h3>
+      {title && <h3 class="card-title">{title}</h3>}
+      {badge && <span class="card-badge">{badge}</span>}
     </div>
   )}
-  <div class="text-text-on-surface-secondary leading-relaxed space-y-4">
+  <div class="card-content">
     <slot />
   </div>
 </div>

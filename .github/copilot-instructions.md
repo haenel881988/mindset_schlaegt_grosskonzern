@@ -40,6 +40,23 @@ Simon will, dass die KI mit Simon zuerst über das Problem spricht, mit Simon Br
 Wenn Simon nach unklarem Feedback fragt, muss die KI immer und solange nachfragen, bis die KI weiss, was Simon meint.
 
 
+### Content- & Verkaufsstrategie (Funnel)
+
+1.  **Lead-Magnet-Funnel**: Die primäre Strategie ist NICHT der Direktverkauf. Die Website nutzt einen Lead-Magnet-Funnel.
+    *   **Schritt 1: Landingpage (`src/content/pages/index.mdx`)**: Das Ziel ist, Besucher durch eine authentische, emotionale Geschichte (basierend auf `docs/content/pages/index.md`) dazu zu bewegen, ihre E-Mail-Adresse im Austausch für eine kostenlose Fallstudie zu hinterlassen.
+    *   **Schritt 2: E-Mail-Eintragung**: Der Nutzer trägt sich über das Formspree-Formular (`id="hero-form"`) ein.
+    *   **Schritt 3: Danke-Seite & Auslieferung**: Nach der Eintragung wird der Nutzer auf eine Danke-Seite weitergeleitet. Die Fallstudie wird als versteckte, interaktive Webseite (`/fallstudie`) bereitgestellt, nicht als PDF.
+    *   **Schritt 4: Fallstudien-Seite (`src/pages/fallstudie.astro`)**: Diese Seite liefert den versprochenen Mehrwert (die Fallstudie) und enthält am Ende den Pitch für das kostenpflichtige Mentoring-Programm "Operation Zündkapsel" mit einem Link zur Bewerbungsseite.
+
+2.  **Strikte Trennung von Rechtsberatung**:
+    *   Es darf unter keinen Umständen der Eindruck entstehen, es handle sich um eine Rechtsberatung.
+    *   **Wording**: Formulierungen müssen immer aus der Perspektive einer geteilten Erfahrung stammen ("Ich teile meinen Weg", "Ich zeige meine Strategie"). Direkte Anweisungen oder Garantien ("Du wirst...", "So gewinnst du...") sind verboten.
+    *   **Fokus**: Die Kommunikation muss auf die Stärkung der **Selbstverantwortung** und **Selbstwirksamkeit** des Nutzers abzielen.
+
+3.  **Authentizität vor Copywriting**:
+    *   Die emotionale und authentische Geschichte von Simon (siehe `docs/content/pages/index.md`) ist die "Source of Truth" für die Tonalität und das Wording. Generische Copywriting-Floskeln sind zu vermeiden. Die KI soll Simons Stil adaptieren und verstärken, nicht ersetzen.
+
+
 Ziel: Diese Codebasis liefert eine inhaltlich getriebene Landingpage (Offer „Operation Zündkapsel“) mit Astro 5, MDX-Content Collection & Vercel Adapter Deployment.
 
 Business Konzept: "docs\business_konzept.md"

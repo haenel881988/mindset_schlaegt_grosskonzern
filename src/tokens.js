@@ -21,7 +21,7 @@ export const designTokens = {
     
     // Akzent (Governance-konform)
     accent: '#2563eb',
-    'accent-hover': '#3b82f6',
+  'accent-hover': '#1d4ed8',
     
     // Semantic Colors
     error: '#dc2626',
@@ -74,7 +74,7 @@ export const cssCustomProperties = {
     '--color-primary': designTokens.colors['background-primary'],
     '--color-secondary': designTokens.colors['background-secondary'],
     '--color-accent': designTokens.colors.accent,
-    '--color-accent-hover': designTokens.colors['accent-hover'],
+  '--color-accent-hover': designTokens.colors['accent-hover'],
     '--color-text-primary': designTokens.colors['text-primary'],
     '--color-text-secondary': designTokens.colors['text-secondary'],
     '--color-border-default': designTokens.colors['border-default'],

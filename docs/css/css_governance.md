@@ -37,7 +37,7 @@ Design Tokens sind atomare, nicht verhandelbare Konstanten. Verwaltung zentral i
 - Hintergrund (Tokens): `background-primary` = `#000000`, `background-secondary` = `#111111`
 - Text (Tokens): `text-primary` = `#EAEAEA`, `text-secondary` = `#A0A0A0`
 - Border (Token): `border-default` = `#27272a`
-- Akzent (Tokens): `accent` = `#2563eb`, `accent-hover` = `#3b82f6`
+- Akzent (Tokens): `accent` = `#2563eb`, `accent-hover` = `#1d4ed8`
 - Feedback (Token): `error` = `#dc2626`
 
 #### 2.1.1.1 Surfaces (hell) – für weiße Cards
@@ -197,7 +197,7 @@ export default {
         'border-default': '#27272a',
         // Akzent
         accent: '#2563eb',
-        'accent-hover': '#3b82f6',
+  'accent-hover': '#1d4ed8',
         // Fehler
         error: '#dc2626',
         // Surfaces (Hell) für Cards
@@ -221,7 +221,7 @@ export default {
   --color-primary: #000000;
   --color-secondary: #111111;
   --color-accent: #2563eb;
-  --color-accent-hover: #3b82f6;
+  --color-accent-hover: #1d4ed8;
   --color-text-primary: #FFFFFF;
   --color-text-secondary: #A0A0A0;
   --color-border-default: #27272a;

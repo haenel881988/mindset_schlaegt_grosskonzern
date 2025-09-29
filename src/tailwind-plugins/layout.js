@@ -46,5 +46,28 @@ export default function layoutPlugin({ addComponents }) {
     '.grid-gap-responsive': {
       '@apply gap-4 md:gap-6 lg:gap-8': {},
     },
+
+    // FAQ Accordion Styles
+    '.faq-accordion': {
+      '@apply space-y-4': {},
+    },
+    '.faq-item': {
+      '@apply overflow-hidden rounded-xl border border-border-default/60 bg-background-secondary/60 transition-colors duration-200': {},
+      '&[open]': {
+        '@apply border-accent/60 bg-background-secondary/80': {},
+      },
+    },
+    '.faq-summary': {
+      '@apply flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-left text-lg font-semibold text-text-primary outline-none transition-colors duration-200': {},
+      '&:hover': {
+        '@apply text-accent': {},
+      },
+      '&:focus-visible': {
+        '@apply ring-2 ring-accent ring-offset-2 ring-offset-background-primary': {},
+      },
+    },
+    '.faq-content': {
+      '@apply border-t border-border-default/60 px-5 py-4 text-base leading-relaxed text-text-primary/80': {},
+    },
   });
 }

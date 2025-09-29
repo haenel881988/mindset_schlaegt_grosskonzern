@@ -10,41 +10,41 @@ const { variant = 'content', prose = true, spacing = 'normal' } = Astro.props as
 const bgByVariant: Record<string,string> = {
   hero: 'bg-background-primary',
   content: 'bg-background-primary',
-  proof: 'bg-gradient-to-b from-background-primary via-background-primary to-background-secondary/90',
-  story: 'bg-background-secondary',
+  proof: 'bg-background-primary',
+  story: 'bg-background-primary',
   minimal: 'bg-background-primary',
-  accent: 'bg-background-secondary/80 border border-border-default/60 shadow-[0_0_60px_rgba(37,99,235,0.2)] backdrop-blur-sm',
+  accent: 'bg-background-primary border border-border-default/70 shadow-[0_0_40px_rgba(37,99,235,0.15)]',
 };
 
 // Verbesserter Rhythm mit Design-Token-basierten Abständen
 const rhythm: Record<string, Record<string, string>> = {
   hero: {
-    compact: 'py-rhythm-lg md:py-rhythm-xl',
-    normal: 'py-16 md:py-24',
-    spacious: 'py-20 md:py-32',
+    compact: 'py-16 md:py-24',
+    normal: 'py-20 md:py-28',
+    spacious: 'py-24 md:py-32',
   },
   content: {
-    compact: 'py-rhythm-md md:py-rhythm-lg',
-    normal: 'py-rhythm-lg md:py-rhythm-xl',
-    spacious: 'py-20 md:py-28',
+    compact: 'py-16 md:py-24',
+    normal: 'py-20 md:py-28',
+    spacious: 'py-24 md:py-32',
   },
   proof: {
-    compact: 'py-rhythm-lg md:py-rhythm-xl',
+    compact: 'py-16 md:py-24',
     normal: 'py-20 md:py-28',
     spacious: 'py-24 md:py-32',
   },
   story: {
-    compact: 'py-rhythm-md md:py-rhythm-lg',
-    normal: 'py-rhythm-lg md:py-rhythm-xl',
-    spacious: 'py-20 md:py-28',
+    compact: 'py-16 md:py-24',
+    normal: 'py-20 md:py-28',
+    spacious: 'py-24 md:py-32',
   },
   minimal: {
-    compact: 'py-rhythm-sm md:py-rhythm-md',
-    normal: 'py-rhythm-md md:py-rhythm-lg',
-    spacious: 'py-16 md:py-20',
+    compact: 'py-12 md:py-16',
+    normal: 'py-16 md:py-20',
+    spacious: 'py-20 md:py-24',
   },
   accent: {
-    compact: 'py-rhythm-lg md:py-rhythm-xl',
+    compact: 'py-16 md:py-24',
     normal: 'py-20 md:py-28',
     spacious: 'py-24 md:py-32',
   },

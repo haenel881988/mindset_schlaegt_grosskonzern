@@ -6,16 +6,15 @@ export default function cardsPlugin({ addComponents }) {
   addComponents({
     // Basis Card mit subtiler Hover-Animation
     '.card-base': {
-      '@apply bg-surface border border-border-surface rounded-xl p-8 text-text-on-surface shadow-sm transition-all duration-200': {},
-      // Verbesserung: Subtile Y-Translation bei Hover
+      '@apply relative flex h-full min-h-[320px] flex-col justify-between gap-6 rounded-xl border border-border-surface bg-surface p-8 text-text-on-surface shadow-lg transition-transform duration-200 ease-out': {},
       '&:hover': {
-        '@apply shadow-2xl shadow-black/10 -translate-y-1': {},
+        '@apply -translate-y-1 shadow-2xl shadow-blue-500/10': {},
       },
     },
     
     // Card Grid Layout
     '.card-grid': {
-      '@apply grid grid-cols-1 md:grid-cols-3 gap-8': {},
+      '@apply grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-10': {},
     },
     
     // Card mit besserem Fokus-State für Accessibility
@@ -28,7 +27,16 @@ export default function cardsPlugin({ addComponents }) {
     
     // Card Header für konsistente Strukturierung
     '.card-header': {
-      '@apply mb-4 pb-4 border-b border-border-surface': {},
+      '@apply flex items-center justify-between gap-3 border-b border-border-surface pb-4': {},
+    },
+    '.card-title': {
+      '@apply text-2xl font-semibold text-text-on-surface': {},
+    },
+    '.card-badge': {
+      '@apply inline-flex items-center justify-center rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent': {},
+    },
+    '.card-content': {
+      '@apply flex-1 space-y-4 text-base leading-relaxed text-text-on-surface': {},
     },
     
     // Card Footer

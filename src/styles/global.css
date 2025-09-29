@@ -8,7 +8,7 @@
   --color-primary: #000000;
   --color-secondary: #111111;
   --color-accent: #2563eb;
-  --color-accent-hover: #3b82f6;
+  --color-accent-hover: #1d4ed8;
   --color-text-primary: #EAEAEA;
   --color-text-secondary: #A0A0A0;
   --color-border-default: #27272a;
@@ -111,3 +111,7 @@ html {
 }
 
 /* Accent-Abschnitt nutzt Standard-Tokens; keine Sonderbehandlung nötig */
+
+  .faq-summary::-webkit-details-marker {
+    display: none;
+  }
