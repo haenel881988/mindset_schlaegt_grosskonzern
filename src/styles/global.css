@@ -69,7 +69,7 @@ html {
   }
   
   p {
-    @apply text-lg leading-relaxed text-text-secondary;
+    @apply text-lg leading-relaxed text-text-primary;
     /* Optimale Zeilenlänge für Lesbarkeit */
     max-width: 65ch;
   }

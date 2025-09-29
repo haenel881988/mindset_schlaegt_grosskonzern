@@ -6,7 +6,7 @@ export default function cardsPlugin({ addComponents }) {
   addComponents({
     // Basis Card mit subtiler Hover-Animation
     '.card-base': {
-      '@apply relative flex h-full min-h-[320px] flex-col justify-between gap-6 rounded-xl border border-border-surface bg-surface p-8 text-text-on-surface shadow-lg transition-transform duration-200 ease-out': {},
+      '@apply relative flex h-full min-h-[280px] flex-col justify-between gap-6 rounded-xl border border-border-surface bg-surface p-8 text-text-on-surface shadow-lg transition-transform duration-200 ease-out md:min-h-[320px]': {},
       '&:hover': {
         '@apply -translate-y-1 shadow-2xl shadow-blue-500/10': {},
       },
