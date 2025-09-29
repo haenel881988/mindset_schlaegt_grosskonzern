@@ -33,7 +33,7 @@ export default function cardsPlugin({ addComponents }) {
       '@apply text-2xl font-semibold text-text-on-surface': {},
     },
     '.card-badge': {
-      '@apply inline-flex items-center justify-center rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent': {},
+      '@apply inline-flex items-center justify-center rounded-md bg-accent/10 px-3 py-1 text-sm font-bold tracking-wider uppercase text-accent': {},
     },
     '.card-content': {
       '@apply flex-1 space-y-4 text-base leading-relaxed text-text-on-surface': {},
