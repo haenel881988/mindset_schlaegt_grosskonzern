@@ -60,7 +60,7 @@ export default function layoutPlugin({ addComponents }) {
     '.faq-summary': {
       '@apply flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-left text-lg font-semibold text-text-primary outline-none transition-colors duration-200': {},
       '&:hover': {
-        '@apply text-accent': {},
+        '@apply bg-accent/10': {},
       },
       '&:focus-visible': {
         '@apply ring-2 ring-accent ring-offset-2 ring-offset-background-primary': {},

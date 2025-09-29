@@ -75,7 +75,23 @@ html {
   }
   
   a {
-    @apply text-accent hover:text-accent-hover transition-colors;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.35em;
+    transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+  }
+
+  a:hover {
+    text-decoration-color: var(--color-accent-hover);
+  }
+
+  a.btn-primary,
+  a.btn-secondary,
+  a.btn-outline,
+  a.btn-contrast {
+    text-decoration: none;
   }
 }
 
