@@ -58,13 +58,21 @@ export default function layoutPlugin({ addComponents }) {
       },
     },
     '.faq-summary': {
-      '@apply flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-left text-lg font-semibold text-text-primary outline-none transition-colors duration-200': {},
+      '@apply relative flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-left text-lg font-semibold text-text-primary outline-none transition-colors duration-200': {},
+      '&::after': {
+        content: '"+"',
+        '@apply ml-4 text-2xl font-light text-accent transition-transform duration-300 ease-out': {},
+      },
       '&:hover': {
         '@apply bg-accent/10': {},
       },
       '&:focus-visible': {
         '@apply ring-2 ring-accent ring-offset-2 ring-offset-background-primary': {},
       },
+    },
+    '.faq-item[open] > .faq-summary::after': {
+      content: '"-"',
+      '@apply -rotate-180': {},
     },
     '.faq-content': {
       '@apply border-t border-border-default/60 px-5 py-4 text-base leading-relaxed text-text-primary/80': {},

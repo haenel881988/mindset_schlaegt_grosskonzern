@@ -7,8 +7,8 @@ const footerLinks = [
 const year = new Date().getFullYear();
 ---
 <footer class="bg-background-primary border-t border-border-default mt-24">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-12 text-center">
-    <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-6">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 text-center">
+    <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-8">
       {footerLinks.map(link => (
         <a href={link.href} class="text-sm text-text-secondary hover:text-text-primary transition-colors">{link.text}</a>
       ))}
