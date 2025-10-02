@@ -9,10 +9,34 @@ const description = 'Bewirb dich für eines der 10 Gründer‑Mandate: 12‑mona
   <SectionWrapper variant="accent" prose={false}>
     <div class="content-narrow space-y-8">
       <div class="space-y-4">
-        <h1 class="text-3xl md:text-4xl font-bold text-text-primary">Bewerbung – Operation Zündkapsel</h1>
-        <p class="text-text-secondary">
-          Bewirb dich für das 12-monatige Mentoring-Programm. Beschreibe klar deinen Fall, dein Ziel und warum du bereit bist, die Verantwortung zu übernehmen.
-        </p>
+        <h1 class="text-3xl md:text-4xl font-bold text-text-primary">Beta-Programm: 1:1 Strategic Mentoring</h1>
+        <div class="space-y-6 text-text-secondary">
+          <p class="text-lg font-semibold text-text-primary">Ich suche 1-3 Personen für mein Beta-Programm (90 Tage).</p>
+          
+          <div class="space-y-3">
+            <p class="font-semibold text-text-primary">Was du bekommst:</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>6× 90-Min-Sessions über 90 Tage (alle 2 Wochen)</li>
+              <li>Meine kompletten Vorlagen & KI-Prompts (Notion oder MS365)</li>
+              <li>WhatsApp/Telegram-Support zwischen Sessions</li>
+              <li>Beta-Preis: 497 CHF (statt regulär 1'497 CHF)</li>
+            </ul>
+          </div>
+
+          <div class="space-y-3">
+            <p class="font-semibold text-text-primary">Was du NICHT bekommst:</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Rechtsberatung (das bin ich nicht!)</li>
+              <li>Garantie für Erfolg (niemand kann das versprechen)</li>
+              <li>Bequemlichkeit (du musst 5-10h/Woche investieren)</li>
+            </ul>
+          </div>
+
+          <div class="bg-background-primary/50 border border-border-default rounded-lg p-4">
+            <p class="font-semibold text-text-primary mb-2">Wichtig:</p>
+            <p>Dies ist ein Beta-Programm. Ich zeige dir meine Struktur und Methodik, aber die Umsetzung liegt 100% bei dir. Als Gegenleistung für den reduzierten Preis benötige ich ein Video-Testimonial nach Abschluss (kann anonymisiert werden).</p>
+          </div>
+        </div>
       </div>
 
       <form
@@ -56,38 +80,77 @@ const description = 'Bewirb dich für eines der 10 Gründer‑Mandate: 12‑mona
       </div>
 
       <div class="form-field">
-        <label for="gegner" class="form-label">Gegner (Firma/Versicherung/Behörde)<span class="text-error">*</span></label>
-        <input id="gegner" name="gegner" required class="form-input" />
+        <label for="situation" class="form-label">Deine Situation in 3-5 Sätzen<span class="text-error">*</span></label>
+        <textarea id="situation" name="situation" required rows="5" class="form-input" placeholder="Beschreibe kurz, welche Herausforderung du hast (z.B. Konflikt mit Arbeitgeber, Pensionskasse, Behörde)"></textarea>
       </div>
 
       <div class="form-field">
-        <label for="fall" class="form-label">Fall‑Kurzfassung (5–10 Sätze)<span class="text-error">*</span></label>
-        <textarea id="fall" name="fall" required rows="6" class="form-input"></textarea>
+        <label for="tools" class="form-label">Welche Tools nutzt du bereits?<span class="text-error">*</span></label>
+        <select id="tools" name="tools" required class="form-input">
+          <option value="">Bitte wählen...</option>
+          <option value="notion">Notion</option>
+          <option value="ms365">Microsoft 365 Business</option>
+          <option value="ms365_copilot">Microsoft 365 Business + Copilot</option>
+          <option value="google">Google Workspace</option>
+          <option value="keine">Keine Struktur / Alles in E-Mails</option>
+        </select>
       </div>
 
       <div class="form-field">
-        <label for="ziel12" class="form-label">Ziel in 12 Monaten<span class="text-error">*</span></label>
-        <textarea id="ziel12" name="ziel12" required rows="4" class="form-input"></textarea>
+        <label for="ki_tools" class="form-label">Hast du Zugang zu KI-Tools?<span class="text-error">*</span></label>
+        <select id="ki_tools" name="ki_tools" required class="form-input">
+          <option value="">Bitte wählen...</option>
+          <option value="chatgpt">Ja, ChatGPT Plus (22 CHF/Monat)</option>
+          <option value="claude">Ja, Claude Pro (~20 CHF/Monat)</option>
+          <option value="copilot">Ja, Microsoft Copilot (in MS365)</option>
+          <option value="gemini">Ja, Google Gemini Advanced</option>
+          <option value="mehrere">Ja, mehrere Tools</option>
+          <option value="bereit">Nein, aber bereit zu investieren</option>
+          <option value="nein">Nein, und möchte nichts investieren</option>
+        </select>
       </div>
 
       <div class="form-field">
-        <label for="bisher" class="form-label">Was hast du bereits versucht? (optional)</label>
-        <textarea id="bisher" name="bisher" rows="3" class="form-input"></textarea>
+        <label for="zeitinvest" class="form-label">Bist du bereit, 5-10 Stunden/Woche zu investieren?<span class="text-error">*</span></label>
+        <select id="zeitinvest" name="zeitinvest" required class="form-input">
+          <option value="">Bitte wählen...</option>
+          <option value="ja">Ja, ich kann 5-10h/Woche investieren</option>
+          <option value="mehr">Ja, ich kann sogar mehr investieren</option>
+          <option value="weniger">Nein, ich habe nur 2-5h/Woche Zeit</option>
+          <option value="unsicher">Unsicher, kommt auf die Woche an</option>
+        </select>
       </div>
 
       <div class="form-field">
-        <label for="doku_link" class="form-label">Link zu Unterlagen (optional)</label>
-        <input id="doku_link" type="url" name="doku_link" placeholder="https://…" class="form-input" />
+        <label for="ziel90" class="form-label">Was möchtest du in 90 Tagen erreicht haben?<span class="text-error">*</span></label>
+        <textarea id="ziel90" name="ziel90" required rows="4" class="form-input" placeholder="Fokus auf Lernziel, nicht auf 'Fall gewinnen' (z.B. 'Ich will ein System haben, um meine Dokumente zu strukturieren und KI effektiv zu nutzen')"></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="bisher" class="form-label">Welche Schritte hast du bereits selbst unternommen? (optional)</label>
+        <textarea id="bisher" name="bisher" rows="3" class="form-input" placeholder="z.B. 'Ich habe bereits formelle Schreiben verfasst' oder 'Ich habe versucht, ChatGPT zu nutzen, aber weiß nicht genau wie'"></textarea>
       </div>
 
       <div class="space-y-3">
+        <label class="inline-flex items-start gap-3" for="eigenverantwortung">
+          <input id="eigenverantwortung" type="checkbox" name="eigenverantwortung" required class="mt-1 h-5 w-5 rounded border border-border-default bg-background-primary text-accent focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background-primary transition-colors" />
+          <span class="text-text-secondary">Ich verstehe, dass ich 100% eigenverantwortlich für meinen Fall bleibe und dies KEINE Rechtsberatung ist.<span class="text-error">*</span></span>
+        </label>
+        <label class="inline-flex items-start gap-3" for="ki_verantwortung">
+          <input id="ki_verantwortung" type="checkbox" name="ki_verantwortung" required class="mt-1 h-5 w-5 rounded border border-border-default bg-background-primary text-accent focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background-primary transition-colors" />
+          <span class="text-text-secondary">Mir ist bewusst, dass ich alle KI-Outputs selbst überprüfen muss (idealerweise mit mehreren Modellen und Stichproben).<span class="text-error">*</span></span>
+        </label>
+        <label class="inline-flex items-start gap-3" for="methodik">
+          <input id="methodik" type="checkbox" name="methodik" required class="mt-1 h-5 w-5 rounded border border-border-default bg-background-primary text-accent focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background-primary transition-colors" />
+          <span class="text-text-secondary">Ich verstehe, dass Simon mir seine Struktur zeigt (Aktenverzeichnis, Präambel, Dokumentation), die Umsetzung aber meine Aufgabe ist.<span class="text-error">*</span></span>
+        </label>
         <label class="inline-flex items-start gap-3" for="commit_testimonial">
           <input id="commit_testimonial" type="checkbox" name="commit_testimonial" required class="mt-1 h-5 w-5 rounded border border-border-default bg-background-primary text-accent focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background-primary transition-colors" />
-          <span class="text-text-secondary">Ich bestätige mein Commitment für ein schonungsloses Video‑Testimonial nach meinem Sieg.<span class="text-error">*</span></span>
+          <span class="text-text-secondary">Ich verpflichte mich zu einem Video-Testimonial nach Abschluss des Programms (kann anonymisiert werden).<span class="text-error">*</span></span>
         </label>
         <label class="inline-flex items-start gap-3" for="privacy">
           <input id="privacy" type="checkbox" name="privacy" required class="mt-1 h-5 w-5 rounded border border-border-default bg-background-primary text-accent focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background-primary transition-colors" />
-          <span class="text-text-secondary">Ich habe die <a href="/datenschutz" class="text-text-primary underline decoration-accent decoration-2 underline-offset-4 hover:decoration-accent-hover">Datenschutz</a> gelesen.<span class="text-error">*</span></span>
+          <span class="text-text-secondary">Ich habe die <a href="/datenschutz" class="text-text-primary underline decoration-accent decoration-2 underline-offset-4 hover:decoration-accent-hover">Datenschutzerklärung</a> gelesen.<span class="text-error">*</span></span>
         </label>
       </div>
 
@@ -102,9 +165,9 @@ const description = 'Bewirb dich für eines der 10 Gründer‑Mandate: 12‑mona
       </div>
 
       <button type="submit" class="btn-primary mt-2">
-        Jetzt bewerben
+        Bewerbung senden
       </button>
-      <p class="text-xs text-text-secondary/80">* Pflichtfelder | Nach dem Absenden erhältst du innerhalb von 7 Tagen eine Rückmeldung.</p>
+      <p class="text-xs text-text-secondary/80">* Pflichtfelder</p>
       </form>
     </div>
 
