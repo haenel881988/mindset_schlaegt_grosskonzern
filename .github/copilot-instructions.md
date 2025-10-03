@@ -4,7 +4,31 @@
 
 ### Business Konzept
 
-**Single Source of truth** ist folgendes Dokument:
+**Single Source of truth** ist folge2) Planen
+- Aufgaben werden in eine To‑do‑Liste überführt, genau 1 Item ist „in‑progress".
+- Abhängigkeiten/Dateipfade/Contracts werden kurz notiert (Inputs/Outputs, Fehlerbilder).
+
+2) a: Git-Workflow (automatisch nach größeren Änderungen)
+- **Wann**: Nach Abschluss einer logischen Änderungseinheit (z.B. Feature fertig, Content-Update abgeschlossen, Bug gefixt)
+- **Commands**:
+  ```bash
+  git add .
+  git commit -m "Aussagekräftige Commit-Message"
+  git push
+  ```
+- **Commit-Message Format** (Beispiele):
+  - `"Content Overhaul: Landingpage (Timeline-Narrative), Bewerbung (Beta-Programm), Marketing-Docs erstellt"`
+  - `"Fix: Datenschutz-Terminologie korrigiert (Mandat→Mentoring-Programm), keine rechtliche Implikation"`
+  - `"Feature: FAQ-Sektion mit +/- Indikatoren, Card-Component mit Badges erweitert"`
+  - `"Docs: Business-Konzept aktualisiert (1:1 Beta-Programm statt Jahres-Abo), Pricing flexibilisiert"`
+- **Best Practices**:
+  - Commit-Messages in **Deutsch** (Simons Sprache)
+  - **Konkret**: Was wurde geändert? Welche Dateien betroffen?
+  - **Kontext**: Warum wurde es geändert? (z.B. "Keine Halluzinationen - nur echte Fakten")
+  - **Handlungsrelevant**: Nächste Schritte oder offene Todos kurz erwähnen, falls relevant
+- **KI führt Git-Commands automatisch aus**, wenn Simon sagt: "Kannst du auch die git befehle für mich durchführen?"
+
+3) Umsetzen (kleine, sichere Schritte)kument:
 ***Pfad: "docs\business_konzept.md"***
 
 **Social Proof**
@@ -147,8 +171,29 @@ Wenn die KI absolut 100% sicher ist, soll die KI mit Punkt 2) weitermachen.
 5) Zusammenfassen
 - Was wurde geändert (Dateien, Schlüsselstellen), wie testen, offener Rest/Nächstes.
 
-5) a) Wieder Git befehle durchführen und Dokumentieren, was alles  geändert wurde und offene Todos / Issues / Erkenntnisse ebenfalls in die commit nachricht schreiben damit diese Infos, für Simon, als Zusammenfassung / nächste Schritte dargelegt werden können.
-Einfache Sprache verwenden und konkrete Handlungsvorschläge geben.
+5) a: Finaler Git-Commit (nach Abschluss der Aufgabe)
+- **Wann**: Nach erfolgreicher Umsetzung + Build-Check
+- **Commands** (identisch zu 2)a):
+  ```bash
+  git add .
+  git commit -m "Aussagekräftige Zusammenfassung der Änderungen + Nächste Schritte"
+  git push
+  ```
+- **Commit-Message erweitert um**:
+  - Geänderte Dateien (z.B. `src/content/pages/index.mdx`, `src/pages/bewerbung.astro`)
+  - Offene Todos / Issues (z.B. "TODO: Build testen, Form auf Staging validieren")
+  - Erkenntnisse (z.B. "Erkenntnis: Timeline-Narrative stärker als generisches 'Gewinnen mit KI'")
+  - Nächste Schritte für Simon (z.B. "Nächster Schritt: Deploy auf Vercel, Facebook-Profil aktualisieren")
+- **Beispiel**:
+  ```
+  "Content Overhaul abgeschlossen: Landingpage (index.mdx), Bewerbung (bewerbung.astro), 
+  Datenschutz (datenschutz.astro), Marketing-Docs (blog_prompts.md, facebook_content.md, 
+  perplexity_prompts.md). Nächste Schritte: Deploy testen, Facebook-Profil mit Titelbild 
+  aktualisieren, 3 Blogs generieren mit ChatGPT. Offene Todos: Perplexity-Research starten 
+  (30 Gruppen, 20 Influencer), Launch-Post finalisieren für 5600 Follower."
+  ```
+- **Einfache Sprache** für Simon (keine Tech-Jargon)
+- **Konkrete Handlungsvorschläge** statt vage "könnte man noch..."
 
 
 ### Definition of Done (DoD)
