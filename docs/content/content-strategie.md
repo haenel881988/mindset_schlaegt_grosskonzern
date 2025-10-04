@@ -18,6 +18,7 @@
 - **Verwendung:** Rohdaten als MVP nutzen
 - **Anonymisierung:** Organisch anonymisieren (z.B. "die Pensionskasse" statt "PK Siemens")
   - **Offene Frage:** Dürfen wir "PK Siemens" nennen? → Klärung via `docs\rechtliches`
+  // Nein, PK Siemens zu nennen ist NICHT erlaubt! nur Pensionskasse.
 
 #### **2. WIE (Methode + System) = Verkauf Notion-Vorlage (999 CHF)**
 - **Zweck:** Zeigen, WIE man sich juristisch selbst hilft
