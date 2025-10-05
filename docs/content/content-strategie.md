@@ -20,10 +20,10 @@
   - **Offene Frage:** Dürfen wir "PK Siemens" nennen? → Klärung via `docs\rechtliches`
   // Nein, PK Siemens zu nennen ist NICHT erlaubt! nur Pensionskasse.
 
-#### **2. WIE (Methode + System) = Verkauf Notion-Vorlage (999 CHF)**
+#### **2. WIE (Methode + System) = Verkauf Notion-Vorlage (999 CHF Beta, 3'999 CHF regulär)**
 - **Zweck:** Zeigen, WIE man sich juristisch selbst hilft
 - **Produkt:** Notion-Vorlage (Chronologie, Widersprüche, Aktenverzeichnis)
-- **Preis:** 999 CHF (später: 497 CHF Beta-Preis)
+- **Preis:** 999 CHF (Beta) → 3'999 CHF regulär
 - **Rechtliche Absicherung:** `docs\rechtliches` (unerlaubte Rechtsberatung vermeiden)
 
 ---

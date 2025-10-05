@@ -79,7 +79,7 @@ Meine Siege sprengen meine Ketten, ich bin frei!
 Auf welcher Seite  stehst du?
 
 
-**Investment: CHF 999.– (Einmalzahlung; 12 Wochen Begleitung)**
+**Investment: CHF 999.– (Beta, regulär 3'999 CHF; 12 Wochen Begleitung)**
 
 [Bewirb dich auf einen der 5 Plätze](/bewerbung)
 

@@ -62,7 +62,7 @@
 ## 6. Kaufeinwände (mit Antworten)
 | Einwand | Antwortstrategie |
 | --- | --- |
-| "999 CHF ist viel Geld." | ROI sichtbar machen: Vergleich mit Anwaltskosten, Zahlungsplan, Beta-Preis, Erfolgsgeschichte. |
+| "999 CHF ist viel Geld." | ROI sichtbar machen: Vergleich mit Anwaltskosten, Beispiel Nachzahlung >30'000 CHF + ~1'200 CHF monatlich, Beta-Preis 999 CHF vs. 3'999 CHF regulär. |
 | "KI kann man nicht trauen." | Validierungsframework zeigen, Beispiele aus deinem Urteil, Hands-on-Test im Erstgespräch. |
 | "Ich habe keine Zeit." | Zeige, dass 2 Stunden Setup 10+ Stunden Suche ersparen; Wochenplan-Vorlage. |
 | "Ich kann das selbst in Excel." | Unterschied Notion + KI-Workflow vs. manuelles Flickwerk erklären; Demo liefern. |

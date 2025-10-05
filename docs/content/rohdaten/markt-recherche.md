@@ -37,7 +37,7 @@ Der primäre Einwand des Gründers gegen ein B2C-Modell lautet, dass den Kunden 
 
 will, sondern jemand, der kämpfen muss. Diese Neuausrichtung des B2C-Mindsets verwandelt eine vermeintliche Schwäche in den zentralen Treiber der Nachfrage.
 
-Die Validierung des Preispunktes von 999 CHF ergibt sich aus dem Vergleich mit der einzigen Alternative: der Beauftragung eines Anwalts. Die Kosten hierfür können sich schnell auf Zehntausende von Franken belaufen, bei üblichen Stundensätzen zwischen 220 und 350 CHF. Für einen Rechtsstreit, bei dem es um einen erheblichen Teil der eigenen Lebensersparnisse geht, stellt eine Investition von 999 CHF in ein Werkzeug, das die Erfolgsaussichten drastisch verbessert und Hunderte von Stunden an mühsamer Arbeit erspart, ein Angebot mit extrem hohem Wert dar. Das Produkt ist keine Billigalternative, sondern ein strategisches Gut von hohem Wert.   
+Die Validierung des Preispunktes von 999 CHF (Beta) bzw. 3'999 CHF regulär ergibt sich aus dem Vergleich mit der einzigen Alternative: der Beauftragung eines Anwalts. Die Kosten hierfür können sich schnell auf Zehntausende von Franken belaufen, bei üblichen Stundensätzen zwischen 220 und 350 CHF. Für einen Rechtsstreit, bei dem es um einen erheblichen Teil der eigenen Lebensersparnisse geht, stellt eine Investition in diese Begleitung, die die Erfolgsaussichten drastisch verbessert und Hunderte von Stunden an mühsamer Arbeit erspart, ein Angebot mit extrem hohem Wert dar. Das Produkt ist keine Billigalternative, sondern ein strategisches Gut von hohem Wert. Zusätzlich belegt der eigene Case von Simon den ROI: rückwirkend >30'000 CHF Auszahlung plus ~1'200 CHF zusätzliche Monatsrente.
 
 B. Die B2B-Ablenkung: Warum ein direkter Geschäftsansatz ein suboptimaler Startpunkt ist
 Der Gründer identifiziert korrekt, dass Unternehmer und Selbstständige keine Zeit haben. Genau aus diesem Grund sind sie die unwahrscheinlichste Zielgruppe für eine Do-it-yourself-Rechtsplattform. Sie neigen dazu, solche komplexen und zeitaufwändigen Aufgaben an Spezialisten wie Anwälte zu delegieren. Der Verkaufsprozess wäre entsprechend komplex und würde erfordern, einen Unternehmer davon zu überzeugen, in ein Werkzeug für ein Problem zu investieren, das er auslagern und nicht selbst bearbeiten möchte.
@@ -236,7 +236,7 @@ Validierung des Angebots: Erstellen einer einfachen Landingpage, die das MVO und
 
 Entwicklung & Markteinführung: Das MVO auf der Grundlage des validierten Interesses entwickeln. Dies ist eine Aufgabe von ein bis zwei Monaten. Die "Technik" ist dabei sekundär gegenüber dem strategischen Inhalt (Vorlagen, Prompts, Anleitungen).
 
-B. Das Minimum Viable Offer (MVO): Das "Rechtliche Selbstverteidigungs-Kit" (Preis: 999 CHF)
+B. Das Minimum Viable Offer (MVO): Das "Rechtliche Selbstverteidigungs-Kit" (Preis: 999 CHF Beta / 3'999 CHF regulär)
 Dieser Abschnitt definiert das greifbare Produkt, um der Angst des Gründers, wie er die Zahlungsbereitschaft testen kann, entgegenzuwirken.
 
 Komponenten:

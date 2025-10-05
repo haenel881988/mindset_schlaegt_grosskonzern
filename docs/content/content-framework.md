@@ -52,7 +52,7 @@
 
 | Seite | Primäre Ebene | Sekundäre Ebene | Was wird kommuniziert? | Was wird VERKAUFT? |
 |-------|---------------|-----------------|------------------------|-------------------|
-| **Landingpage** (`index.mdx`) | **EMOTION** (80%) | Information (20%) | Geschichte: Was ist passiert? Warum kämpfen? Timeline 25.10.24 → 02.07.25 | **90-Tage-Mentoring-Programm** (Begleitung, keine Tools!) |
+| **Landingpage** (`index.mdx`) | **EMOTION** (80%) | Information (20%) | Geschichte: Was ist passiert? Warum kämpfen? Timeline 25.10.24 → 02.07.25 | **90-Tage-Mentoring-Programm** (Beta 999 CHF, regulär 3'999 CHF) |
 | **Blogs** | **INFORMATION** (60%) | Emotion (40%) | Methode: WIE funktioniert es? Beispiele aus eigenem Fall | **90-Tage-Mentoring-Programm** (gleich wie Landingpage) |
 | **Fallstudie** (/fallstudie) | **INFORMATION** (80%) | Emotion (20%) | Detaillierter Ablauf: Was habe ich konkret getan? Dokumente, Timeline, Widersprüche | **90-Tage-Mentoring-Programm** (Pitch am Ende) |
 | **Bewerbung** (/bewerbung) | **INFORMATION** (100%) | - | Erwartungsmanagement: Was bekommst du? Was NICHT? Preis, Ablauf, Zeitaufwand | **NICHTS** (Bewerbung = Qualifikation, kein Verkauf) |
@@ -185,7 +185,7 @@ Ich zeige dir, wie du DEIN System aufbaust.
 - WhatsApp-Support zwischen Sessions
 - Du baust DEIN System (ich zeige dir wie)
 
-**Beta-Preis: 997 CHF** (statt 1'997 CHF)  
+**Beta-Preis: 999 CHF** (statt 3'999 CHF regulär)  
 Nur für die ersten 3 Teilnehmer.
 
 [Jetzt bewerben](/bewerbung)
@@ -194,6 +194,7 @@ Nur für die ersten 3 Teilnehmer.
 - Ich bin kein Anwalt (dies ersetzt keine Rechtsberatung)
 - Ich schreibe NICHT deine Dokumente (du lernst selbst)
 - Ich garantiere NICHT deinen Erfolg (du musst kämpfen)
+ - Ideale Voraussetzung: Deine überobligatorische BVG-Rente wurde sistiert oder gekündigt (ROI-Beweis: >30'000 CHF rückwirkend, ~1'200 CHF monatlich in meinem Fall)
 ```
 
 **Warum so?**

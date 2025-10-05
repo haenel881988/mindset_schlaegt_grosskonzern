@@ -22,7 +22,9 @@ Jetzt will ich testen: Funktioniert meine Methode auch für andere?
 • 6× 90-Min-Sessions (alle 2 Wochen)
 • Meine kompletten Vorlagen & KI-Prompts
 • WhatsApp-Support zwischen Sessions
-• Beta-Preis: 497 CHF (statt 1'497 CHF)
+• Beta-Preis: 999 CHF (statt 3'999 CHF)
+• Erfahrungswert: Mein eigener Fall brachte >30'000 CHF Nachzahlung + ~1'200 CHF Monatsrente
+• Voraussetzung: Deine überobligatorische BVG-Rente wurde sistiert oder gekündigt
 
 ⚠️ Was du NICHT bekommst:
 • Rechtsberatung (bin kein Anwalt!)
@@ -75,7 +77,7 @@ Was ich NICHT biete:
 ❌ Erfolgsgarantie (kann niemand geben)
 ❌ Eine magische Lösung (es ist harte Arbeit!)
 
-Preis: 497 CHF (Beta) statt 1'497 CHF
+Preis: 999 CHF (Beta) statt 3'999 CHF
 Bedingung: Video-Testimonial am Ende
 
 Bereit? → [LINK ZUR BEWERBUNGSSEITE]
@@ -98,7 +100,7 @@ Meine Methode: Notion + KI + Eigenverantwortung
 
 Jetzt suche ich 3 Personen, um zu testen: Funktioniert das auch für dich?
 
-→ 90 Tage, 6 Sessions, 497 CHF (Beta-Preis)
+→ 90 Tage, 6 Sessions, 999 CHF (Beta-Preis)
 → Du bekommst meine komplette Struktur
 → Du bleibst 100% eigenverantwortlich (keine Rechtsberatung!)
 

@@ -6,7 +6,7 @@ Hier werden alle Todos, Unsortierte Ideen von Simon aufgelistet.
 - Newsletter umsetzen
 - Blogserie starten --> mit welchem Blog / Thema beginnen?
 - Evtl. gratis Handout / Fallbeispiel als Download --> im Gegenzug E-Mail-Adressen?
-- Notionvorlage fertigstellen oder erstmal 1:1 Angebot für 999.-? 5 Plätze
+- Notionvorlage fertigstellen oder erstmal 1:1 Angebot für 999.-? 5 Plätze (aktuell: Beta-Preis 999 CHF, regulär 3'999 CHF)
 - CSS / Styling, noch immer nicht optimal! Obwohl sicher schon 8 Verbesserungsdurchläufe mit KI!
 
 
@@ -104,3 +104,39 @@ Pitch immer auf die nächst höhere Stufe?
 - [ ] Staging/Preview-Review (Freunde/Partner Feedback einholen)
 - [ ] Go-Live-Kommunikation planen (Newsletter, Social Media, PR)
 - [ ] Monitoring nach Launch (404-Tracking, Performance, Feedback sammeln)
+
+
+
+
+
+
+
+# issues
+
+## Google Search Console: Seitenindexierung
+nfo_filled
+Warum Seiten nicht indexiert werden
+Nicht indexierte Seiten können nicht in den Google-Suchergebnissen angezeigt werden
+Grund	Quelle
+
+Validierung	Trend	Seiten
+Alternative Seite mit richtigem kanonischen Tag	Website	
+
+Nicht gestartet
+26
+Nicht gefunden (404)	Website	
+
+Nicht gestartet
+16
+Durch "noindex"-Tag ausgeschlossen	Website	
+
+Nicht gestartet
+4
+Gecrawlt – zurzeit nicht indexiert	Google-Systeme	
+
+Nicht gestartet
+7
+Gefunden – zurzeit nicht indexiert	Google-Systeme	
+
+Nicht gestartet
+1

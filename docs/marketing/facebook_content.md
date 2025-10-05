@@ -161,7 +161,9 @@ Was du bekommst:
 • Meine exakte Methode (Aktenverzeichnis, Chronologie, KI-Analyse)
 • 6× 90-Min-Sessions über 90 Tage
 • WhatsApp-Support zwischen Sessions
-• Beta-Preis: 497-1'497 CHF (je nach Scope)
+• Beta-Preis: 999 CHF (statt 3'999 CHF regulär)
+• ROI-Beweis: >30'000 CHF rückwirkend + ~1'200 CHF monatlich in meinem eigenen Fall
+• Voraussetzung: Sistierte oder gekündigte überobligatorische BVG-Rente
 
 Was du NICHT bekommst:
 • Rechtsberatung (ich bin kein Anwalt!)
@@ -197,7 +199,7 @@ Oktober 2025: Ich suche 3 Personen für mein Beta-Programm.
 Deine Waffe: GPT-5 (unbegrenzt) + meine Methode.
 Dein Ziel: Eigenverantwortlich kämpfen.
 
-90 Tage. 6 Sessions. 497-1'497 CHF.
+90 Tage. 6 Sessions. 999 CHF (Beta) / 3'999 CHF regulär.
 
 Keine Rechtsberatung. Keine Garantie. Nur harte Arbeit + Struktur.
 
